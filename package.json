@@ -37,6 +37,7 @@
           "*.js"
         ],
         "extends": [
+          "next/core-web-vitals",
           "@mediamonks/eslint-config"
         ]
       },
@@ -45,6 +46,7 @@
           "*.jsx"
         ],
         "extends": [
+          "next/core-web-vitals",
           "@mediamonks/eslint-config",
           "@mediamonks/eslint-config-react"
         ]
@@ -57,6 +59,7 @@
           "project": "./tsconfig.json"
         },
         "extends": [
+          "next/core-web-vitals",
           "@mediamonks/eslint-config",
           "@mediamonks/eslint-config-typescript"
         ]
@@ -69,11 +72,15 @@
           "project": "./tsconfig.json"
         },
         "extends": [
+          "next/core-web-vitals",
           "@mediamonks/eslint-config",
           "@mediamonks/eslint-config-react",
           "@mediamonks/eslint-config-typescript",
           "@mediamonks/eslint-config-typescript-react"
-        ]
+        ],
+        "rules": {
+          "react/jsx-no-literals": [0]
+        }
       }
     ]
   }
