@@ -26,7 +26,8 @@
     "@mediamonks/eslint-config": "^2.2.2",
     "@mediamonks/eslint-config-react": "^2.3.1",
     "@mediamonks/eslint-config-typescript": "^1.2.1",
-    "@mediamonks/eslint-config-typescript-react": "^1.1.1"
+    "@mediamonks/eslint-config-typescript-react": "^1.1.1",
+    "prettier": "3.0.2"
   },
   "eslintConfig": {
     "overrides": [
