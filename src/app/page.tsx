@@ -131,7 +131,7 @@ export default function Home(): JSX.Element {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/tyz81/"
+                href="./Algemene Voorwaarden - TyZ.pdf"
                 target="_blank"
                 rel="noreferrer"
                 title="Download my Terms and Conditions"
