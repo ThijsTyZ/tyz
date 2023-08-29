@@ -35,14 +35,14 @@ export default function Home(): JSX.Element {
           <div className="py-5 lg:max-w-[30ch]">
             <h2 className="mb-3 text-2xl font-semibold">Leadership</h2>
             <p className="m-0 text-sm opacity-50">
-              Unlock your team&amp;apos;s full potential with my leadership. As
-              an experienced leader for development teams, I offer a distinctive
+              Unlock your team&apos;s full potential with my leadership. As an
+              experienced leader for development teams, I offer a distinctive
               approach that blends <strong>mentoring</strong> and{' '}
               <strong>Agile</strong> methodologies seamlessly. With a focus on{' '}
               <strong>personal growth</strong> within an international context,
-              I don&amp;apos;t just drive projects forward – I cultivate
-              individuals and teams, and elevate your team&amp;apos;s
-              performance to new heights.
+              I don&apos;t just drive projects forward – I cultivate individuals
+              and teams, and elevate your team&apos;s performance to new
+              heights.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function Home(): JSX.Element {
               I specialize in crafting robust solutions for intricate
               challenges, ensuring your systems remain agile and adaptive
               through smart <strong>API</strong> integration that creates a
-              foundation embracing change. Let&amp;apos;s collaborate to conquer
+              foundation embracing change. Let&apos;s collaborate to conquer
               complexity and construct a future-ready framework.
             </p>
           </div>
@@ -66,10 +66,10 @@ export default function Home(): JSX.Element {
               <strong>TypeScript</strong>, I create inclusive experiences
               through <strong>Accessibility</strong>
               (A11Y) integration. While my preference is <strong>React</strong>,
-              I&amp;apos;m proficient in <strong>Angular</strong> and{' '}
-              <strong>Vue</strong> as well. Let&amp;apos;s collaborate to
-              deliver top-tier solutions that redefine possibilities and leave a
-              lasting mark.
+              I&apos;m proficient in <strong>Angular</strong> and{' '}
+              <strong>Vue</strong> as well. Let&apos;s collaborate to deliver
+              top-tier solutions that redefine possibilities and leave a lasting
+              mark.
             </p>
           </div>
         </div>
