@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
           </p>
         </section>
 
-        <section className="mb-32 grid justify-between lg:max-w-5xl w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
+        <section className="grid justify-between lg:max-w-5xl w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
           <article className="py-5 lg:max-w-[30ch]">
             <h2 className="mb-3 text-2xl font-semibold">Leadership</h2>
             <p className="m-0 text-sm opacity-50">
