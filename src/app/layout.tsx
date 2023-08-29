@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     'Development',
     'Website',
     'Front-end',
+    'Front end',
   ],
 };
 
