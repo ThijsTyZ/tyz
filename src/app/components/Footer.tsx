@@ -18,7 +18,7 @@ export function Footer(): ReactElement {
         <ul className="w-1/2 text-right">
           <li>
             <a
-              href="./Curriculum Vitae - Thijs Broerse.pdf"
+              href="/pdf/Curriculum Vitae - Thijs Broerse.pdf"
               target="_blank"
               rel="noreferrer"
               title="Download my Curriculum Vitae"
@@ -59,7 +59,7 @@ export function Footer(): ReactElement {
           </li>
           <li>
             <a
-              href="./Algemene Voorwaarden - TyZ.pdf"
+              href="/pdf/Algemene Voorwaarden - TyZ.pdf"
               target="_blank"
               rel="noreferrer"
               title="Download my Terms and Conditions"
