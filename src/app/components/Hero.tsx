@@ -18,7 +18,7 @@ export function Hero(): ReactElement {
         </h3>
       </div>
 
-      <p className="py-5 lg:text-justify ">
+      <p className="py-5 lg:text-justify opacity-70">
         Thijs Broerse is a highly skilled Frontend expert with over 20 years of
         experience in web development and leadership. Thijs is able to set up,
         develop and maintain complex (frontend) systems, leading (international)

@@ -1,9 +1,9 @@
+import Link from 'next/link';
 import { type ReactElement, Fragment } from 'react';
 import { Footer } from '@/app/components/Footer';
 import { Header } from '@/app/components/Header';
 import { Hero } from '@/app/components/Hero';
 import { skills, recommendations } from '@/app/data/copy';
-import Link from 'next/link';
 
 export default function Home(): ReactElement {
   return (
@@ -22,7 +22,7 @@ export default function Home(): ReactElement {
                 {href ? (
                   <Link
                     href={`${href}`}
-                    title={description || name}
+                    title={description ?? name}
                     target={href.startsWith('http') ? '_blank' : '_self'}
                     rel="noreferrer"
                     className="hover:text-gray-900"
@@ -103,8 +103,10 @@ export default function Home(): ReactElement {
           </h4>
 
           {recommendations.map(({ text, author, position }) => (
-            <p className=" py-5" key={author}>
-              <q className="lg:text-justify opacity-50 italic">{text}</q>
+            <p className="text-sm py-3 " key={author}>
+              <q className="lg:text-justify text-sm text-gray-400 italic">
+                {text}
+              </q>
               <br />
               {author} - {position}
             </p>
