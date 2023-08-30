@@ -10,12 +10,12 @@ export default function Home(): ReactElement {
     <div className="w-full flex flex-col items-center min-h-screen justify-between">
       <Header />
 
-      <main className="w-full flex flex-col items-center p-10  lg:max-w-5xl">
+      <main className="w-full flex flex-col items-center lg:max-w-5xl max-lg:px-10">
         <Hero />
 
         <section className="relative flex flex-col py-5">
           <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
-          <p className="text-sm opacity-40">
+          <p className="text-sm text-gray-400">
             {skills.map(({ name, href, description }, index) => (
               <Fragment key={name}>
                 {Boolean(index) && `, `}
@@ -25,11 +25,12 @@ export default function Home(): ReactElement {
                     title={description || name}
                     target={href.startsWith('http') ? '_blank' : '_self'}
                     rel="noreferrer"
+                    className="hover:text-gray-900"
                   >
                     {name}
                   </Link>
                 ) : (
-                  name
+                  <span className="">{name}</span>
                 )}
               </Fragment>
             ))}
