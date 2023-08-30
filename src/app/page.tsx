@@ -1,26 +1,10 @@
-export default function Home(): JSX.Element {
+import { type ReactElement } from 'react';
+import { Header } from '@/app/components/Header';
+
+export default function Home(): ReactElement {
   return (
     <div className="w-full flex flex-col items-center min-h-screen justify-between">
-      <header className="w-full flex flex-col items-center p-10">
-        <div className="flex max-w-5xl w-full">
-          <div className="w-1/2">
-            <h1 className="text-stone-800 text-4xl">TyZ</h1>
-            <h3 className="text-stone-700 text-s">Think. Yield. Zenith.</h3>
-          </div>
-          <p className="w-1/2 text-right text-xl">
-            <a
-              href="mailto:thijs@tyz.nl"
-              title="Contact me by email on thijs@tyz.nl"
-            >
-              thijs@tyz.nl
-            </a>
-            <br />
-            <a href="tel:+31689936821" title="phonenumer">
-              +31 (0) 6 899 36 821
-            </a>
-          </p>
-        </div>
-      </header>
+      <Header />
 
       <main className="w-full flex flex-col  items-center p-10">
         <section className="max-w-5xl flex flex-col lg:place-items-center">
