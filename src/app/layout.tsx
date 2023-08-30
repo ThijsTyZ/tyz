@@ -2,6 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import type React from 'react';
+import { Footer } from '@/app/components/Footer';
+import { Header } from '@/app/components/Header';
 import { keywords } from '@/app/data/copy';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -21,7 +23,16 @@ export default function RootLayout({
 }): React.ReactNode {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="w-full flex flex-col items-center min-h-screen justify-between">
+          <Header />
+
+          <main className="w-full flex flex-col items-center lg:max-w-5xl max-lg:px-10">
+            {children}
+          </main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
