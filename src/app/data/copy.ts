@@ -1,3 +1,23 @@
+type Page = {
+  href: string;
+  title: string;
+};
+
+export const pages: Array<Page> = [
+  {
+    href: '/',
+    title: 'Home',
+  },
+  {
+    href: '/portfolio',
+    title: 'Portfolio',
+  },
+  {
+    href: '/about',
+    title: 'About me',
+  },
+];
+
 type Skill = {
   name: string;
   description?: string;
