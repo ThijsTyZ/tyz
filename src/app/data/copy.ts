@@ -126,14 +126,14 @@ thinking, connectivity, empathy and mentorship.`,
   {
     text: `I've worked with Thijs for 12,5 years and have always been
 impressed by his skill and knowledge. He&apos;s an absolute legend
-and one of the best I&apos;ve ever worked with. Would absolutely
+and one of the best I've ever worked with. Would absolutely
 recommend!`,
     author: `Dennis de Rooij`,
     position: `Project Director at MediaMonks`,
   },
   {
     text: `Thijs is a machine. Not only is he a very skilled developer but
-he&apos;s someone who likes to strive for top quality and transfer
+he's someone who likes to strive for top quality and transfer
 his knowledge to everyone in his team. During my years working
 with him, I not only learned from his technical skills but also
 from his vast experience leading other developers (which included
