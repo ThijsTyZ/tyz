@@ -9,7 +9,7 @@ export function Header(): ReactElement {
           <h1 className="text-4xl tracking-[-.1em]">TYZ</h1>
           <h3 className="text-s">Think. Yield. Zenith.</h3>
         </Link>
-        <p className="w-1/2 text-right text-xl">
+        <p className="w-1/2 text-right text-s leading-8">
           <a
             href="mailto:thijs@tyz.nl"
             title="Contact me by email on thijs@tyz.nl"

@@ -1,31 +1,41 @@
+import type { ValueOf } from 'next/constants';
+
+export const paths = {
+  home: '/',
+  portfolio: '/portfolio',
+  about: '/about',
+} as const;
+
+type Path = ValueOf<typeof paths>;
+
 type Page = {
-  href: string;
+  path: Path;
   title: string;
 };
 
 export const pages: Array<Page> = [
   {
-    href: '/',
+    path: paths.home,
     title: 'Home',
   },
   {
-    href: '/portfolio',
+    path: paths.portfolio,
     title: 'Portfolio',
   },
   {
-    href: '/about',
+    path: paths.about,
     title: 'About me',
   },
-];
+] as const;
 
 type Skill = {
   name: string;
   description?: string;
   href?: string;
-  alternatives?: Array<string>;
+  alternatives?: ReadonlyArray<string>;
 };
 
-export const skills: Array<Skill> = [
+export const skills: ReadonlyArray<Skill> = [
   {
     name: 'Frontend',
     href: 'https://en.wikipedia.org/wiki/Front-end_web_development',
@@ -87,6 +97,8 @@ export const skills: Array<Skill> = [
   { name: 'SPA' },
   { name: 'SSR' },
   { name: 'SSG' },
+  { name: 'AWS' },
+  { name: 'GraphQL' },
   { name: 'Code Review' },
   { name: 'Coding Standards' },
   { name: 'ESLinting' },
@@ -107,7 +119,7 @@ export const skills: Array<Skill> = [
   { name: 'Communication' },
   { name: 'Complex UI' },
   { name: 'Passionated' },
-];
+] as const;
 
 export const keywords: Array<string> = [
   'Thijs Broerse',
@@ -130,7 +142,7 @@ type Recommendation = {
   position: string;
 };
 
-export const recommendations: Array<Recommendation> = [
+export const recommendations: ReadonlyArray<Recommendation> = [
   {
     text: `During Thijs his 15 years at the Media.Monks he has shown to be a
 specialist within his role and able to maneuver in a dynamic high
@@ -145,7 +157,7 @@ thinking, connectivity, empathy and mentorship.`,
   },
   {
     text: `I've worked with Thijs for 12,5 years and have always been
-impressed by his skill and knowledge. He&apos;s an absolute legend
+impressed by his skill and knowledge. H's an absolute legend
 and one of the best I've ever worked with. Would absolutely
 recommend!`,
     author: `Dennis de Rooij`,
@@ -190,4 +202,4 @@ Thijs in their team.`,
     author: `Stephan Bezoen`,
     position: 'Lead Android Developer at MediaMonks',
   },
-];
+] as const;
