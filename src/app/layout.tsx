@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import type React from 'react';
+import type { ReactNode, ReactElement } from 'react';
 import { Footer } from '@/app/components/Footer';
 import { Header } from '@/app/components/Header';
 import { keywords } from '@/app/data/copy';
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
-}): React.ReactNode {
+  children: ReactNode;
+}): ReactElement {
   return (
     <html lang="en">
       <body className={inter.className}>

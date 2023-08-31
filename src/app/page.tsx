@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { type ReactElement, Fragment } from 'react';
+import { Cta } from '@/app/components/Cta';
 import { Hero } from '@/app/components/Hero';
 import { skills, recommendations, paths } from '@/app/data/copy';
 
@@ -81,37 +82,56 @@ export default function Home(): ReactElement {
 
       {/* CTA */}
       <section className="max-w-5xl flex flex-col lg:place-items-center py-10">
-        <Link
-          href="mailto:thijs@tyz.nl"
-          className="text-black text-4xl p-5 m-2 rounded-lg border border-transparent transition-colors border-gray-300 bg-gray-100 hover:border-gray-600 hover:bg-white hover:no-underline"
-        >
-          Email thijs@tyz.nl
-        </Link>
-        <a href="tel:+31689936821" className="text-stone-700 text-xl max-w-5xl">
+        <Cta href="mailto:thijs@tyz.nl">Email thijs@tyz.nl</Cta>
+
+        <a href="tel:+31689936821" className="text-white text-m max-w-5xl">
           or call me on +31 (0) 6 899 36 821
         </a>
       </section>
       {/**/}
 
       {/* Portfolio */}
-      <section className="p-5 pb-20 w-full mt-4 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-transparent rounded-xl text-white text-sm">
+      <section className="p-5 w-full mt-4 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-transparent rounded-xl text-white text-sm">
         <h3 className="text-2xl mb-5">Work</h3>
         <p className="text-sm opacity-70">
           During my employment at Media.Monks, Lost Boys and as a freelancer I
           have worked for Hyundai Genesis, Prologis, Albert Heijn, Efteling,
           Kodak, Amazon, Radio 538, GMC, Nickelodeon, KPN Hi, Brunel, Old Spice,
           Remy Martin, Doritos, Pearl Opticiens, Ikea, ING, Dela, T-Mobile,
-          Heineken, Coca Cola and more. <br />
-          <Link href={paths.portfolio}>Please take a look at my portfolio</Link>
-          <div className="flex flex-col lg:place-items-center py-10">
-            <Link
-              href={paths.portfolio}
-              className="text-black text-4xl p-5 m-2 rounded-lg border border-transparent transition-colors border-gray-300 bg-gray-100 hover:border-gray-600 hover:bg-white hover:no-underline"
-            >
-              Portfolio
-            </Link>
-          </div>
+          Heineken, Coca Cola and more. For a selection of my work, checkout{' '}
+          <Link
+            href={paths.portfolio}
+            className="underline hover:text-black"
+            title="View my porfolio"
+          >
+            {' '}
+            my portfolio
+          </Link>{' '}
+          or check my profile on{' '}
+          <Link
+            href="https://github.com/ThijsTyZ"
+            target="_blank"
+            rel="noreferrer"
+            title="View my profile on Github"
+            className="underline hover:text-black"
+          >
+            Github
+          </Link>{' '}
+          or{' '}
+          <Link
+            href="https://codepen.io/_TyZ_"
+            target="_blank"
+            rel="noreferrer"
+            title="View my profile on Codepen"
+            className="underline hover:text-black"
+          >
+            Codepen
+          </Link>
         </p>
+
+        <div className="flex flex-col lg:place-items-center py-10">
+          <Cta path={paths.portfolio}>Check out my portfolio</Cta>
+        </div>
       </section>
       {/**/}
 
