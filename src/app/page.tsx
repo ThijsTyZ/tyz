@@ -22,6 +22,9 @@ export default function Home(): ReactElement {
             <strong>personal growth</strong> within an international context, I
             don&apos;t just drive projects forward – I cultivate individuals and
             teams, and elevate your team&apos;s performance to new heights.
+            <br />
+            <br />
+            <Link href={paths.portfolio}>Read more...</Link>
           </p>
         </article>
         <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-l lg:bg-gradient-to-t from-[rgba(255,255,255,0.2)] to-transparent rounded-xl text-black">
@@ -34,6 +37,9 @@ export default function Home(): ReactElement {
             <strong>API</strong> integration that creates a foundation embracing
             change. Let&apos;s collaborate to conquer complexity and construct a
             future-ready framework.
+            <br />
+            <br />
+            <Link href={paths.portfolio}>Read more...</Link>
           </p>
         </article>
         <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-r lg:bg-gradient-to-b from-white to-transparent rounded-xl text-black">
@@ -49,6 +55,9 @@ export default function Home(): ReactElement {
             <strong>Vue</strong> as well. Let&apos;s collaborate to deliver
             top-tier solutions that redefine possibilities and leave a lasting
             mark.
+            <br />
+            <br />
+            <Link href={paths.portfolio}>Read more...</Link>
           </p>
         </article>
       </section>
