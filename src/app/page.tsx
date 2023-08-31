@@ -8,34 +8,11 @@ export default function Home(): ReactElement {
     <>
       <Hero />
 
-      <section className="relative flex flex-col py-5">
-        <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
-        <p className="text-sm text-gray-400">
-          {skills.map(({ name, href, description }, index) => (
-            <Fragment key={name}>
-              {Boolean(index) && `, `}
-              {href ? (
-                <Link
-                  href={`${href}`}
-                  title={description ?? name}
-                  target={href.startsWith('http') ? '_blank' : '_self'}
-                  rel="noreferrer"
-                  className="hover:text-gray-900"
-                >
-                  {name}
-                </Link>
-              ) : (
-                <span className="">{name}</span>
-              )}
-            </Fragment>
-          ))}
-        </p>
-      </section>
-
-      <section className="grid justify-between w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
-        <article className="py-5 lg:max-w-[30ch]">
-          <h2 className="mb-3 text-2xl font-semibold">Leadership</h2>
-          <p className="m-0 text-sm opacity-50">
+      <section className="grid justify-between w-full lg:mb-0 lg:grid-cols-3 lg:text-left py-10">
+        <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-r lg:bg-gradient-to-b from-white to-transparent rounded-xl text-black">
+          <h2 className="mb-3 text-2xl font-semibold">Think.</h2>
+          <h3 className="mb-3 text-xl font-semibold">Architecture</h3>
+          <p className="m-0 text-sm opacity-70">
             Unlock your team&apos;s full potential with my leadership. As an
             experienced leader for development teams, I offer a distinctive
             approach that blends <strong>mentoring</strong> and{' '}
@@ -46,9 +23,10 @@ export default function Home(): ReactElement {
           </p>
         </article>
 
-        <article className="py-5 lg:max-w-[30ch]">
-          <h2 className="mb-3 text-2xl font-semibold">Architecture</h2>
-          <p className="m-0 text-sm opacity-50">
+        <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-l lg:bg-gradient-to-t from-[#aaa] to-transparent rounded-xl text-black">
+          <h2 className="mb-3 text-2xl font-semibold text-white">Yield.</h2>
+          <h3 className="mb-3 text-xl font-semibold text-white">Leadership</h3>
+          <p className="m-0 text-sm opacity-70 text-white">
             Building for Change with Solid APIs. In the realm of architecture, I
             specialize in crafting robust solutions for intricate challenges,
             ensuring your systems remain agile and adaptive through smart{' '}
@@ -58,11 +36,10 @@ export default function Home(): ReactElement {
           </p>
         </article>
 
-        <article className="py-5 lg:max-w-[30ch] ">
-          <h2 className="mb-3 text-2xl font-semibold">
-            Award Winning Websites
-          </h2>
-          <p className="m-0 text-sm opacity-50">
+        <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-r lg:bg-gradient-to-b from-white to-transparent rounded-xl text-black">
+          <h2 className="mb-3 text-2xl font-semibold">Zenith.</h2>
+          <h3 className="mb-3 text-xl font-semibold">Amazing Websites</h3>
+          <p className="m-0 text-sm opacity-70">
             In the world of development, I bring high standards, robustness, and
             a performance-driven approach to the table. With expertise in{' '}
             <strong>TypeScript</strong>, I create inclusive experiences through{' '}
@@ -75,6 +52,33 @@ export default function Home(): ReactElement {
           </p>
         </article>
       </section>
+
+      {/* Skills */}
+      <section className="relative flex flex-col py-5">
+        <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
+        <p className="text-sm">
+          {skills.map(({ name, href, description }, index) => (
+            <Fragment key={name}>
+              {Boolean(index) && <span className="opacity-60">, </span>}
+              {href ? (
+                <Link
+                  href={`${href}`}
+                  title={description ?? name}
+                  target={href.startsWith('http') ? '_blank' : '_self'}
+                  rel="noreferrer"
+                  className="opacity-60 hover:opacity-100"
+                >
+                  {name}
+                </Link>
+              ) : (
+                <span className="opacity-60">{name}</span>
+              )}
+            </Fragment>
+          ))}
+        </p>
+      </section>
+
+      {/**/}
 
       <section className="max-w-5xl flex flex-col lg:place-items-center py-10">
         <a
