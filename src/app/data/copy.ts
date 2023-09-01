@@ -13,7 +13,7 @@ type Page = {
   title: string;
 };
 
-export const pages: Array<Page> = [
+export const pages: ReadonlyArray<Page> = [
   {
     path: paths.home,
     title: 'Home',
@@ -27,6 +27,54 @@ export const pages: Array<Page> = [
     title: 'About me',
   },
 ] as const;
+
+export type Article = {
+  title: string;
+  subtitle: string;
+  text: string;
+};
+
+export const articles: ReadonlyArray<Article> = [
+  {
+    title: 'Think.',
+    subtitle: 'Elevate your software architecture',
+    text: `In the world of web development, sound software architecture is the
+            bedrock of every successful project. As an interim Tech Lead with a
+            specialization in Frontend and web development, I make
+            'Think' the cornerstone of my approach. It's about
+            envisioning the structural framework of your digital masterpiece,
+            meticulously planning every element to ensure scalability,
+            efficiency, and sustainability. Together, we'll lay the
+            foundation for a robust software architecture that stands the test
+            of time, enabling your project to thrive and evolve.`,
+  },
+  {
+    title: 'Yield.',
+    subtitle: 'Leadership that produces results',
+    text: `Effective leadership is the key to unlocking the full potential of
+            your development team. As an interim Tech Lead, my focus on
+            'Yield' centers on cultivating strong leadership skills. I
+            empower your team to excel, guiding them towards peak performance
+            and success. Through mentorship, collaboration, and clear
+            communication, I ensure that your project not only meets but exceeds
+            expectations. With me at the helm, you'll experience leadership
+            that produces tangible results, driving your project forward
+            with confidence.`,
+  },
+  {
+    title: 'Zenith.',
+    subtitle: 'Crafting web experiences at their peak',
+    text: `Every website aspires to reach its 'Zenith', the pinnacle
+            of its potential. My passion lies in crafting web experiences that
+            are nothing short of extraordinary. With a keen eye for design and
+            an unwavering commitment to detail, I transform your vision into
+            reality. 'Zenith' is where amazing websites are born,
+            where aesthetics meet functionality, and where user experience
+            reigns supreme. Together, we'll ascend to the peak of web
+            development, creating digital wonders that captivate your audience
+            and leave a lasting impact.`,
+  },
+];
 
 type Skill = {
   name: string;

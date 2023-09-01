@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { type ReactElement, Fragment } from 'react';
+import ArticleBlock from '@/app/components/ArticleBlock';
 import { Cta } from '@/app/components/Cta';
 import { Hero } from '@/app/components/Hero';
-import { skills, recommendations, paths } from '@/app/data/copy';
+import { skills, recommendations, paths, articles } from '@/app/data/copy';
 
 export default function Home(): ReactElement {
   return (
@@ -11,64 +12,13 @@ export default function Home(): ReactElement {
 
       {/* Think. Yield. Zenith. */}
       <section className="grid justify-between w-full lg:mb-0 lg:grid-cols-3 lg:text-left py-10">
-        <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-r lg:bg-gradient-to-b from-white to-transparent rounded-xl text-black">
-          <h2 className="mb-3 text-2xl font-semibold">Think.</h2>
-          <h3 className="mb-3 text-xl">Elevate your software architecture</h3>
-          <p className="text-sm opacity-70">
-            In the world of web development, sound software architecture is the
-            bedrock of every successful project. As an interim Tech Lead with a
-            specialization in Frontend and web development, I make
-            &apos;Think&apos; the cornerstone of my approach. It&apos;s about
-            envisioning the structural framework of your digital masterpiece,
-            meticulously planning every element to ensure scalability,
-            efficiency, and sustainability. Together, we&apos;ll lay the
-            foundation for a robust software architecture that stands the test
-            of time, enabling your project to thrive and evolve.
-            <br />
-            <br />
-            <Link href={paths.portfolio}>Read more...</Link>
-          </p>
-        </article>
-        <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-l lg:bg-gradient-to-t from-[rgba(255,255,255,0.2)] to-transparent rounded-xl text-black">
-          <h2 className="mb-3 text-2xl font-semibold text-white">Yield.</h2>
-          <h3 className="mb-3 text-xl text-white">
-            Leadership that produces results
-          </h3>
-          <p className="text-sm opacity-70 text-white">
-            Effective leadership is the key to unlocking the full potential of
-            your development team. As an interim Tech Lead, my focus on
-            &apos;Yield&apos; centers on cultivating strong leadership skills. I
-            empower your team to excel, guiding them towards peak performance
-            and success. Through mentorship, collaboration, and clear
-            communication, I ensure that your project not only meets but exceeds
-            expectations. With me at the helm, you&apos;ll experience leadership
-            that produces tangible results, driving your project forward
-            with&nbsp;confidence.
-            <br />
-            <br />
-            <Link href={paths.portfolio}>Read more...</Link>
-          </p>
-        </article>
-        <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-r lg:bg-gradient-to-b from-white to-transparent rounded-xl text-black">
-          <h2 className="mb-3 text-2xl font-semibold">Zenith.</h2>
-          <h3 className="mb-3 text-xl">
-            Crafting web experiences at their peak
-          </h3>
-          <p className="text-sm opacity-70">
-            Every website aspires to reach its &apos;Zenith&apos;, the pinnacle
-            of its potential. My passion lies in crafting web experiences that
-            are nothing short of extraordinary. With a keen eye for design and
-            an unwavering commitment to detail, I transform your vision into
-            reality. &apos;Zenith&apos; is where amazing websites are born,
-            where aesthetics meet functionality, and where user experience
-            reigns supreme. Together, we&apos;ll ascend to the peak of web
-            development, creating digital wonders that captivate your audience
-            and leave a lasting&nbsp;impact.
-            <br />
-            <br />
-            <Link href={paths.portfolio}>Read more...</Link>
-          </p>
-        </article>
+        {articles.map((article, index) => (
+          <ArticleBlock
+            key={article.title}
+            {...article}
+            variant={index % 2 ? 'black' : 'white'}
+          />
+        ))}
       </section>
       {/**/}
 
