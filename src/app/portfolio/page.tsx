@@ -160,7 +160,7 @@ const projects: ReadonlyArray<Project> = [
 
 export default function Portfolio(): ReactElement {
   return (
-    <section>
+    <section className="py-5">
       <h2 className="text-6xl">Portfolio</h2>
       <p className="py-5 lg:text-justify opacity-70 lg:pr-10 pt-4">
         I&apos;ve had the privilege of working on numerous exciting web
