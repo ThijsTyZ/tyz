@@ -9,11 +9,11 @@ export default function ArticleBlock({
 }: Article & { variant: 'white' | 'black' }): ReactElement {
   return (
     <article
-      className={`p-5 lg:pb-32 bg-gradient-to-r rounded-xl to-transparent
+      className={`p-5 lg:pb-32 rounded-xl to-transparent
      ${
        variant === 'white'
-         ? `lg:bg-gradient-to-b from-white text-black`
-         : `lg:bg-gradient-to-t from-[rgba(255,255,255,0.2)] text-white`
+         ? `bg-gradient-to-r lg:bg-gradient-to-b from-white text-black`
+         : `bg-gradient-to-l lg:bg-gradient-to-t from-[rgba(255,255,255,0.2)] text-white`
      }
     `}
     >

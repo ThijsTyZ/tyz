@@ -23,7 +23,7 @@ export default function Home(): ReactElement {
       {/**/}
 
       {/* Skills */}
-      <section className="p-5 pb-20 mt-4 relative flex flex-col bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.6)] to-transparent rounded-xl text-black">
+      <section className="p-5 lg:mt-4 relative flex flex-col bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.8)] to-transparent rounded-xl text-black">
         <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
         <p className="text-sm">
           {skills.map(({ name, href, description }, index) => (
@@ -35,7 +35,7 @@ export default function Home(): ReactElement {
                   title={description ?? name}
                   target={href.startsWith('http') ? '_blank' : '_self'}
                   rel="noreferrer"
-                  className="opacity-60 hover:opacity-100"
+                  className="opacity-60 hover:opacity-100 underline"
                 >
                   {name}
                 </Link>
@@ -95,6 +95,7 @@ export default function Home(): ReactElement {
           >
             Codepen
           </Link>
+          for code examples
         </p>
 
         <div className="flex flex-col lg:place-items-center py-10">
@@ -104,7 +105,7 @@ export default function Home(): ReactElement {
       {/**/}
 
       {/* Recommendations */}
-      <section className="p-5 pb-20 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-transparent rounded-xl text-black text-sm">
+      <section className="p-5 mb-10 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-transparent rounded-xl text-black text-sm">
         <h3 className="text-white text-2xl mb-5">What others say about me</h3>
         {recommendations.map(({ text, author, position }, index) => (
           <p
@@ -118,11 +119,13 @@ export default function Home(): ReactElement {
             <br />- <strong>{author}</strong> {position}
           </p>
         ))}
+        <br />
         <a
           href="https://www.linkedin.com/in/tyz81/details/recommendations/"
           target="_blank"
           rel="noreferrer"
           title="Read more recommendations about me on LinkedIn"
+          className="underline p-5"
         >
           Read more...
         </a>
