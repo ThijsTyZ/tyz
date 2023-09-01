@@ -17,11 +17,11 @@ export function Hero(): ReactElement {
           Interim Tech Lead & Freelance Frontend Architect
         </h3>
         <p className="py-2 lg:text-justify opacity-70 lg:pr-10 pt-4">
-          Thijs Broerse is a passionated, highly skilled Frontend expert with
-          over 20 years of experience in web development and leadership. Thijs
-          is able to set up, develop and maintain complex (frontend) systems,
-          leading (international) development teams. Thijs worked on many (award
-          winning) projects, specialized in scripting and architecture.
+          Hi, I am Thijs Broerse, a passionated, highly skilled Frontend expert
+          with over 20 years of experience in web development and leadership. I
+          am able to set up, develop and maintain complex (frontend) systems and
+          lead (international) development teams. I have worked on many (award
+          winning) projects. I am specialized in scripting and architecture.
         </p>
       </div>
     </section>
