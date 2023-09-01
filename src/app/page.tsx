@@ -42,8 +42,8 @@ export default function Home(): ReactElement {
             and success. Through mentorship, collaboration, and clear
             communication, I ensure that your project not only meets but exceeds
             expectations. With me at the helm, you&apos;ll experience leadership
-            that produces tangible results, driving your project forward with
-            confidence.
+            that produces tangible results, driving your project forward
+            with&nbsp;confidence.
             <br />
             <br />
             <Link href={paths.portfolio}>Read more...</Link>
@@ -62,7 +62,8 @@ export default function Home(): ReactElement {
             reality. &apos;Zenith&apos; is where amazing websites are born,
             where aesthetics meet functionality, and where user experience
             reigns supreme. Together, we&apos;ll ascend to the peak of web
-            development, creating digital wonders that leave a lasting impact.
+            development, creating digital wonders that captivate your audience
+            and leave a lasting&nbsp;impact.
             <br />
             <br />
             <Link href={paths.portfolio}>Read more...</Link>
