@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ReactElement } from 'react';
+import { paths } from '@/app/data/copy';
 
 type Project = {
   title: string;
@@ -239,6 +240,10 @@ export default function Portfolio(): ReactElement {
           </article>
         ),
       )}
+      <br />
+      <Link href={paths.home} className="text-black underline p-5">
+        Back to home
+      </Link>
     </section>
   );
 }
