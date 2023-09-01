@@ -13,15 +13,17 @@ export default function Home(): ReactElement {
       <section className="grid justify-between w-full lg:mb-0 lg:grid-cols-3 lg:text-left py-10">
         <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-r lg:bg-gradient-to-b from-white to-transparent rounded-xl text-black">
           <h2 className="mb-3 text-2xl font-semibold">Think.</h2>
-          <h3 className="mb-3 text-xl font-semibold">Architecture</h3>
+          <h3 className="mb-3 text-xl">Elevate your software architecture</h3>
           <p className="text-sm opacity-70">
-            Unlock your team&apos;s full potential with my leadership. As an
-            experienced leader for development teams, I offer a distinctive
-            approach that blends <strong>mentoring</strong> and{' '}
-            <strong>Agile</strong> methodologies seamlessly. With a focus on{' '}
-            <strong>personal growth</strong> within an international context, I
-            don&apos;t just drive projects forward – I cultivate individuals and
-            teams, and elevate your team&apos;s performance to new heights.
+            In the world of web development, sound software architecture is the
+            bedrock of every successful project. As an interim Tech Lead with a
+            specialization in Frontend and web development, I make
+            &apos;Think&apos; the cornerstone of my approach. It&apos;s about
+            envisioning the structural framework of your digital masterpiece,
+            meticulously planning every element to ensure scalability,
+            efficiency, and sustainability. Together, we&apos;ll lay the
+            foundation for a robust software architecture that stands the test
+            of time, enabling your project to thrive and evolve.
             <br />
             <br />
             <Link href={paths.portfolio}>Read more...</Link>
@@ -29,14 +31,19 @@ export default function Home(): ReactElement {
         </article>
         <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-l lg:bg-gradient-to-t from-[rgba(255,255,255,0.2)] to-transparent rounded-xl text-black">
           <h2 className="mb-3 text-2xl font-semibold text-white">Yield.</h2>
-          <h3 className="mb-3 text-xl font-semibold text-white">Leadership</h3>
+          <h3 className="mb-3 text-xl text-white">
+            Leadership that produces results
+          </h3>
           <p className="text-sm opacity-70 text-white">
-            Building for Change with Solid APIs. In the realm of architecture, I
-            specialize in crafting robust solutions for intricate challenges,
-            ensuring your systems remain agile and adaptive through smart{' '}
-            <strong>API</strong> integration that creates a foundation embracing
-            change. Let&apos;s collaborate to conquer complexity and construct a
-            future-ready framework.
+            Effective leadership is the key to unlocking the full potential of
+            your development team. As an interim Tech Lead, my focus on
+            &apos;Yield&apos; centers on cultivating strong leadership skills. I
+            empower your team to excel, guiding them towards peak performance
+            and success. Through mentorship, collaboration, and clear
+            communication, I ensure that your project not only meets but exceeds
+            expectations. With me at the helm, you&apos;ll experience leadership
+            that produces tangible results, driving your project forward with
+            confidence.
             <br />
             <br />
             <Link href={paths.portfolio}>Read more...</Link>
@@ -44,17 +51,18 @@ export default function Home(): ReactElement {
         </article>
         <article className="p-5 pb-10 lg:pb-32 bg-gradient-to-r lg:bg-gradient-to-b from-white to-transparent rounded-xl text-black">
           <h2 className="mb-3 text-2xl font-semibold">Zenith.</h2>
-          <h3 className="mb-3 text-xl font-semibold">Amazing Websites</h3>
+          <h3 className="mb-3 text-xl">
+            Crafting web experiences at their peak
+          </h3>
           <p className="text-sm opacity-70">
-            In the world of development, I bring high standards, robustness, and
-            a performance-driven approach to the table. With expertise in{' '}
-            <strong>TypeScript</strong>, I create inclusive experiences through{' '}
-            <strong>Accessibility</strong>
-            (A11Y) integration. While my preference is <strong>React</strong>,
-            I&apos;m proficient in <strong>Angular</strong> and{' '}
-            <strong>Vue</strong> as well. Let&apos;s collaborate to deliver
-            top-tier solutions that redefine possibilities and leave a lasting
-            mark.
+            Every website aspires to reach its &apos;Zenith&apos;, the pinnacle
+            of its potential. My passion lies in crafting web experiences that
+            are nothing short of extraordinary. With a keen eye for design and
+            an unwavering commitment to detail, I transform your vision into
+            reality. &apos;Zenith&apos; is where amazing websites are born,
+            where aesthetics meet functionality, and where user experience
+            reigns supreme. Together, we&apos;ll ascend to the peak of web
+            development, creating digital wonders that leave a lasting impact.
             <br />
             <br />
             <Link href={paths.portfolio}>Read more...</Link>
