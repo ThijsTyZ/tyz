@@ -1,20 +1,23 @@
 import Link from 'next/link';
-import type { ReactElement, ReactNode } from 'react';
+import type { ComponentProps, ReactElement, ReactNode } from 'react';
 import type { Path } from '@/app/data/copy';
 
 export function Cta({
   children,
   path,
   href,
+  ...rest
 }: {
   children: ReactNode;
-} & (
-  | { path: Path; href?: never }
-  | { href: string; path?: never }
-)): ReactElement {
+} & Omit<ComponentProps<typeof Link>, 'href'> &
+  (
+    | { path: Path; href?: never }
+    | { href: string; path?: never }
+  )): ReactElement {
   return (
     <Link
       href={path ?? href}
+      {...rest}
       className={`
               text-white text-3xl
               p-4 m-2 

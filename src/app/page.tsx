@@ -11,7 +11,7 @@ export default function Home(): ReactElement {
       <Hero />
 
       {/* Think. Yield. Zenith. */}
-      <section className="grid justify-between w-full lg:mb-0 lg:grid-cols-3 lg:text-left py-10">
+      <section className="grid justify-between w-full lg:grid-cols-3 lg:text-left py-5">
         {articles.map((article, index) => (
           <ArticleBlock
             key={article.title}
@@ -22,8 +22,18 @@ export default function Home(): ReactElement {
       </section>
       {/**/}
 
+      {/* CTA */}
+      <section className="max-w-5xl flex flex-col lg:place-items-center py-5">
+        <Cta href="mailto:thijs@tyz.nl">Email thijs@tyz.nl</Cta>
+
+        <a href="tel:+31689936821" className="text-white text-m max-w-5xl">
+          or call me on +31 (0) 6 899 36 821
+        </a>
+      </section>
+      {/**/}
+
       {/* Skills */}
-      <section className="p-5 lg:mt-4 relative flex flex-col bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.8)] to-transparent rounded-xl text-black">
+      <section className="p-5 mt-4 relative flex flex-col bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.8)] to-transparent rounded-xl text-black">
         <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
         <p className="text-sm">
           {skills.map(({ name, href, description }, index) => (
@@ -45,16 +55,18 @@ export default function Home(): ReactElement {
             </Fragment>
           ))}
         </p>
-      </section>
-      {/**/}
 
-      {/* CTA */}
-      <section className="max-w-5xl flex flex-col lg:place-items-center py-10">
-        <Cta href="mailto:thijs@tyz.nl">Email thijs@tyz.nl</Cta>
-
-        <a href="tel:+31689936821" className="text-white text-m max-w-5xl">
-          or call me on +31 (0) 6 899 36 821
-        </a>
+        <div className="flex flex-col lg:place-items-center py-10">
+          <Cta
+            href="/pdf/Curriculum Vitae - Thijs Broerse.pdf"
+            target="_blank"
+            rel="noreferrer"
+            title="Download my Curriculum Vitae"
+            download
+          >
+            Download CV
+          </Cta>
+        </div>
       </section>
       {/**/}
 
