@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import type { ReactElement } from 'react';
-import ArticleBlock from '@/app/components/ArticleBlock';
+import { Cta } from '@/app/components/Cta';
 
 type Project = {
   title: string;
@@ -35,7 +36,7 @@ const projects: ReadonlyArray<Project> = [
     employer: 'MediaMonks',
     year: '2019',
     description:
-      'Internal schooling program to train new and junior Frontend developer',
+      'Internal schooling program to train new and junior Frontend developers',
     role: 'Teacher',
   },
   {
@@ -160,32 +161,94 @@ const projects: ReadonlyArray<Project> = [
 
 export default function Portfolio(): ReactElement {
   return (
-    <section className="p-5 mb-10 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-transparent rounded-xl text-black text-sm">
-      <h1 className="text-white text-2xl mb-5">Portfolio</h1>
-      <div className="grid justify-between w-full lg:grid-cols-3 lg:text-left py-5">
-        {projects.map(
-          (
-            { title, employer, year, description, href, technique, role },
-            index,
-          ) => (
-            <ArticleBlock
-              title={title}
-              subtitle={`${year} - ${employer}`}
-              text={description}
-              variant={index % 2 ? 'black' : 'white'}
-            />
-            // <article
-            //   className={`p-5 from-white to-transparent rounded-xl text-black ${
-            //     index % 2 ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
-            //   }`}
-            //   key={title}
-            // >
-            //   <h2>{title}</h2>
-            //   <p>{description}</p>
-            // </article>
-          ),
-        )}
-      </div>
+    <section>
+      <h2 className="text-6xl py-5">Portfolio</h2>
+      <p className="py-2 lg:text-justify opacity-70 lg:pr-10 pt-4">
+        I&apos;ve had the privilege of working on numerous exciting web
+        projects. Please explore this selection of my recent work. Due to
+        confidentiality, I can&apos;t showcase everything, but these examples
+        highlight my expertise.
+        <br />
+        <br />
+        For more details or specific project inquiries, feel free to contact me.
+        Thank you for visiting, and let&apos;s discuss how I can bring your web
+        project to life.
+      </p>
+      {/* CTA */}
+      <section className="max-w-5xl flex flex-col lg:place-items-center py-5">
+        <Cta href="mailto:thijs@tyz.nl">Email thijs@tyz.nl</Cta>
+
+        <a href="tel:+31689936821" className="text-white text-m max-w-5xl">
+          or call me on +31 (0) 6 899 36 821
+        </a>
+      </section>
+      {/**/}
+      {projects.map(
+        (
+          { title, employer, year, description, href, technique, role },
+          index,
+        ) => (
+          <article
+            className={`p-5 pr-28 from-white to-transparent rounded-xl ${
+              index % 2
+                ? 'bg-gradient-to-l text-white'
+                : 'bg-gradient-to-r text-black'
+            }`}
+            key={title}
+          >
+            <h2 className="text-2xl font-semibold">{title}</h2>
+            <h3 className="mb-3 opacity-40">
+              {year} - {employer}
+            </h3>
+            <p className="text-sm opacity-70">
+              {description}
+              <br />
+              {technique && (
+                <>
+                  <br />
+                  Technique: {technique}
+                </>
+              )}
+              <br />
+              Role: {role}
+              <br />
+              {href &&
+                (Array.isArray(href) ? (
+                  <>
+                    <br />
+                    {href.map((h, hIndex) => (
+                      <>
+                        <Link
+                          href={h}
+                          className="underline"
+                          target="_blank"
+                          rel="noreferrer"
+                          title={title}
+                        >
+                          Link to project {hIndex + 1}
+                        </Link>
+                        <br />
+                      </>
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    <br />
+                    <Link
+                      href={href as string}
+                      className="underline"
+                      target="_blank"
+                      rel="noreferrer"
+                      title={title}
+                    >
+                      Link to project
+                    </Link>
+                  </>
+                ))}
+            </p>
+          </article>
+        ),
+      )}
     </section>
   );
 }
