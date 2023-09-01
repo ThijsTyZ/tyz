@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import type { ReactElement } from 'react';
-import { Cta } from '@/app/components/Cta';
 
 type Project = {
   title: string;
@@ -36,7 +35,7 @@ const projects: ReadonlyArray<Project> = [
     employer: 'MediaMonks',
     year: '2019',
     description:
-      'Internal schooling program to train new and junior Frontend developers',
+      'Internal schooling program at MediaMonks to train new and junior Frontend developers',
     role: 'Teacher',
   },
   {
@@ -162,8 +161,8 @@ const projects: ReadonlyArray<Project> = [
 export default function Portfolio(): ReactElement {
   return (
     <section>
-      <h2 className="text-6xl py-5">Portfolio</h2>
-      <p className="py-2 lg:text-justify opacity-70 lg:pr-10 pt-4">
+      <h2 className="text-6xl">Portfolio</h2>
+      <p className="py-5 lg:text-justify opacity-70 lg:pr-10 pt-4">
         I&apos;ve had the privilege of working on numerous exciting web
         projects. Please explore this selection of my recent work. Due to
         confidentiality, I can&apos;t showcase everything, but these examples
@@ -174,15 +173,6 @@ export default function Portfolio(): ReactElement {
         Thank you for visiting, and let&apos;s discuss how I can bring your web
         project to life.
       </p>
-      {/* CTA */}
-      <section className="max-w-5xl flex flex-col lg:place-items-center py-5">
-        <Cta href="mailto:thijs@tyz.nl">Email thijs@tyz.nl</Cta>
-
-        <a href="tel:+31689936821" className="text-white text-m max-w-5xl">
-          or call me on +31 (0) 6 899 36 821
-        </a>
-      </section>
-      {/**/}
       {projects.map(
         (
           { title, employer, year, description, href, technique, role },
@@ -191,7 +181,7 @@ export default function Portfolio(): ReactElement {
           <article
             className={`p-5 pr-28 from-white to-transparent rounded-xl ${
               index % 2
-                ? 'bg-gradient-to-l text-white'
+                ? 'bg-gradient-to-l text-white [&>*]:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]'
                 : 'bg-gradient-to-r text-black'
             }`}
             key={title}
