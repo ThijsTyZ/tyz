@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { type ReactElement } from 'react';
 
 export function Footer(): ReactElement {
@@ -17,56 +18,56 @@ export function Footer(): ReactElement {
         </p>
         <ul className="w-1/2 text-right">
           <li>
-            <a
-              href="./Curriculum Vitae - Thijs Broerse.pdf"
+            <Link
+              href="/pdf/Curriculum Vitae - Thijs Broerse.pdf"
               target="_blank"
               rel="noreferrer"
               title="Download my Curriculum Vitae"
               download
             >
               Curriculum Vitae
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="https://www.linkedin.com/in/tyz81/"
               target="_blank"
               rel="noreferrer"
               title="View my profile on LinkedIn"
             >
               LinkedIn
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/tyz81/"
+            <Link
+              href="https://github.com/ThijsTyZ"
               target="_blank"
               rel="noreferrer"
               title="View my profile on Github"
             >
               Github
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="https://codepen.io/_TyZ_"
               target="_blank"
               rel="noreferrer"
-              title="View my profile on Github"
+              title="View my profile on Codepen"
             >
               Codepen
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="./Algemene Voorwaarden - TyZ.pdf"
+            <Link
+              href="/pdf/Algemene Voorwaarden - TyZ.pdf"
               target="_blank"
               rel="noreferrer"
               title="Download my Terms and Conditions"
               download
             >
               Terms and Conditions
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
