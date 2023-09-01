@@ -8,8 +8,8 @@ export function Hero(): ReactElement {
         <Image
           src="/img/thijs.jpeg"
           alt="Thijs profile picture"
-          width={200}
-          height={200}
+          width={230}
+          height={230}
           className="rounded-full lg:float-left mr-10 mt-8 border-4 border-white border-opacity-60"
         />
         <h2 className="text-6xl py-5">Thijs Broerse</h2>
@@ -17,11 +17,12 @@ export function Hero(): ReactElement {
           Interim Tech Lead & Freelance Frontend Architect
         </h3>
         <p className="py-2 lg:text-justify opacity-70 lg:pr-10 pt-4">
-          Hi, I am Thijs Broerse, a passionated, highly skilled Frontend expert
-          with over 20 years of experience in web development and leadership. I
-          am able to set up, develop and maintain complex (frontend) systems and
-          lead (international) development teams. I have worked on many (award
-          winning) projects. I am specialized in scripting and architecture.
+          Hi, I&apos;m Thijs Broerse, a passionate and highly skilled frontend
+          expert with over 20 years of experience in web development and
+          leadership. I excel at setting up, developing, and maintaining complex
+          frontend systems, as well as leading international development teams.
+          I have contributed to numerous award-winning projects and specialize
+          in scripting and architecture.
         </p>
       </div>
     </section>
