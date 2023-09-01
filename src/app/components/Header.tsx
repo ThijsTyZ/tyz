@@ -7,7 +7,7 @@ export function Header(): ReactElement {
       <div className="flex max-w-5xl w-full">
         <Link className="w-1/2 hover:no-underline" href="/">
           <h1 className="text-4xl tracking-[-.1em]">TYZ</h1>
-          <h3 className="text-s">Think. Yield. Zenith.</h3>
+          <h3 className="max-sm:text-sm">Think. Yield. Zenith.</h3>
         </Link>
         <p className="w-1/2 text-right text-s leading-8">
           <a
@@ -17,7 +17,11 @@ export function Header(): ReactElement {
             thijs@tyz.nl
           </a>
           <br />
-          <a href="tel:+31689936821" title="phonenumer">
+          <a
+            href="tel:+31689936821"
+            title="phonenumer"
+            className="max-sm:text-sm"
+          >
             +31 (0) 6 899 36 821
           </a>
         </p>

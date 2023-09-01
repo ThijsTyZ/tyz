@@ -155,7 +155,7 @@ const projects: ReadonlyArray<Project> = [
     description:
       'A social media platform with chat, photo upload, agenda and much more. Built before Facebook even existed!',
     technique: 'HTML, CSS, JavaScript, PHP, MySQL',
-    role: 'Founder, Web Developer',
+    role: 'Founder, Developer',
   },
 ];
 
