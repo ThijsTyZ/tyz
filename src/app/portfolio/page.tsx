@@ -165,7 +165,7 @@ export default function Portfolio(): ReactElement {
       <h2 className="text-6xl">Portfolio</h2>
       <p className="py-5 lg:text-justify opacity-70 lg:pr-10 pt-4">
         I&apos;ve had the privilege of working on numerous exciting web
-        projects. Please explore this selection of my recent work. Due to
+        projects. Please explore this selection of my work. Due to
         confidentiality, I can&apos;t showcase everything, but these examples
         highlight my expertise.
         <br />
