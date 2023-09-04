@@ -45,10 +45,8 @@ const projects: ReadonlyArray<Project> = [
     year: '2019',
     description:
       '3D experience where you can configure your own Genesis car. Watch your car from every angle, look inside the car, turn on the lights, open doors, etc.',
-    href: [
-      'https://www.genesis.com/us/en/2021/genesis-g90.html/#/car-configurator/G90',
-      'https://thefwa.com/cases/genesiscom',
-    ],
+    href: 'https://thefwa.com/cases/genesiscom',
+
     technique: 'Vue, WebGL, TypeScript',
     role: 'Architect and Lead Developer',
   },
@@ -161,11 +159,11 @@ const projects: ReadonlyArray<Project> = [
 
 export default function Portfolio(): ReactElement {
   return (
-    <section className="py-5">
+    <section className="p-5 mb-10 bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-transparent rounded-xl text-white text-sm">
       <h2 className="text-6xl">Portfolio</h2>
       <p className="py-5 lg:text-justify opacity-70 lg:pr-10 pt-4">
         I&apos;ve had the privilege of working on numerous exciting web
-        projects. Please explore this selection of my recent work. Due to
+        projects. Please explore this selection of my work. Due to
         confidentiality, I can&apos;t showcase everything, but these examples
         highlight my expertise.
         <br />
@@ -241,7 +239,7 @@ export default function Portfolio(): ReactElement {
         ),
       )}
       <br />
-      <Link href={paths.home} className="text-black underline p-5">
+      <Link href={paths.home} className="underline p-5">
         Back to home
       </Link>
     </section>

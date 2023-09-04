@@ -23,10 +23,10 @@ export default function Home(): ReactElement {
       {/**/}
 
       {/* CTA */}
-      <section className="max-w-5xl flex flex-col lg:place-items-center py-5">
+      <section className="flex flex-col lg:place-items-center py-5">
         <Cta href="mailto:thijs@tyz.nl">Email thijs@tyz.nl</Cta>
 
-        <a href="tel:+31689936821" className="text-white text-m max-w-5xl">
+        <a href="tel:+31689936821" className="text-white text-m text-center">
           or call me on +31 (0) 6 899 36 821
         </a>
       </section>

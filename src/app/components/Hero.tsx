@@ -10,7 +10,7 @@ export function Hero(): ReactElement {
           alt="Thijs profile picture"
           width={230}
           height={230}
-          className="rounded-full lg:float-left mr-10 mt-8 border-4 border-white border-opacity-60"
+          className="rounded-full lg:float-left lg:mr-10 mt-8 border-4 border-white border-opacity-60"
         />
         <h2 className="text-6xl py-5">Thijs Broerse</h2>
         <h3 className="opacity-90 text-3xl max-w-5xl">
