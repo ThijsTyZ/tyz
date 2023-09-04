@@ -45,10 +45,8 @@ const projects: ReadonlyArray<Project> = [
     year: '2019',
     description:
       '3D experience where you can configure your own Genesis car. Watch your car from every angle, look inside the car, turn on the lights, open doors, etc.',
-    href: [
-      'https://www.genesis.com/us/en/2021/genesis-g90.html/#/car-configurator/G90',
-      'https://thefwa.com/cases/genesiscom',
-    ],
+    href: 'https://thefwa.com/cases/genesiscom',
+
     technique: 'Vue, WebGL, TypeScript',
     role: 'Architect and Lead Developer',
   },
