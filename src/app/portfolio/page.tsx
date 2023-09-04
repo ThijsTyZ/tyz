@@ -161,7 +161,7 @@ const projects: ReadonlyArray<Project> = [
 
 export default function Portfolio(): ReactElement {
   return (
-    <section className="py-5">
+    <section className="p-5 mb-10 bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-transparent rounded-xl text-white text-sm">
       <h2 className="text-6xl">Portfolio</h2>
       <p className="py-5 lg:text-justify opacity-70 lg:pr-10 pt-4">
         I&apos;ve had the privilege of working on numerous exciting web
@@ -241,7 +241,7 @@ export default function Portfolio(): ReactElement {
         ),
       )}
       <br />
-      <Link href={paths.home} className="text-black underline p-5">
+      <Link href={paths.home} className="underline p-5">
         Back to home
       </Link>
     </section>
