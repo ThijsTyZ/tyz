@@ -323,7 +323,7 @@ export default function Portfolio(): ReactElement {
   return (
     <section className="p-5 mb-10 bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-transparent rounded-xl text-white text-sm">
       <h2 className="text-6xl">Portfolio</h2>
-      <p className="py-5 lg:text-justify opacity-70 lg:pr-10 pt-4">
+      <p className="py-5 text-justify opacity-70 lg:pr-10 pt-4">
         I&apos;ve had the privilege of working on numerous exciting web
         projects. Please explore this selection of my work. Due to
         confidentiality, I can&apos;t showcase everything, but these examples
@@ -379,7 +379,7 @@ export default function Portfolio(): ReactElement {
             </div>
 
             <div
-              className={`w-full lg:pr-32 ${
+              className={`w-full  pr-8 lg:pr-32 ${
                 index % 2 ? `drop-shadow-[0_0px_5px_rgba(0,0,0,1)]` : ''
               }`}
             >
@@ -387,7 +387,7 @@ export default function Portfolio(): ReactElement {
               <h3 className="mb-3 opacity-40">
                 {year} - {employer}
               </h3>
-              <p className="text-sm opacity-70">
+              <p className="text-sm opacity-70 text-justify">
                 {description}
                 <br />
                 {technique && (
