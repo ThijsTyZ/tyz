@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
+import ImageCarousel from '@/app/components/ImageCarousel';
 import { paths } from '@/app/data/copy';
 
 type Project = {
@@ -150,8 +151,8 @@ const projects: ReadonlyArray<Project> = [
       'bratz_studio_app_1.jpg',
       'bratz_studio_app_2.jpg',
       'bratz_studio_app_3.jpg',
-      'bratz_studio_app_4.jpg',
-      'bratz_studio_app_5.jpg',
+      'bratz_studio_app_4.png',
+      'bratz_studio_app_5.png',
     ],
   },
   {
@@ -367,16 +368,11 @@ export default function Portfolio(): ReactElement {
               />
             )}
 
-            <div className="w-auto">
-              <Image
-                key={images[0]}
-                src={`/img/portfolio/${images[0]}`}
-                width={600}
-                height={600}
-                alt={`image ${title}`}
-                className="rounded-lg max-lg:mb-5 max-lg:w-full"
-              />
-            </div>
+            <ImageCarousel
+              title={title}
+              images={images}
+              autoScrollOffset={index * 200}
+            />
 
             <div
               className={`w-full  pr-8 lg:pr-32 ${
