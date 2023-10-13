@@ -36,7 +36,7 @@ export default function Home(): ReactElement {
       <section className="p-5 mt-4 relative flex flex-col bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.8)] to-transparent rounded-xl text-black">
         <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
         <p className="text-sm">
-          {skills.map(({ name, href, description }, index) => (
+          {skills.map(({ name, href, description, isHighlighted }, index) => (
             <Fragment key={name}>
               {Boolean(index) && <span className="opacity-60">, </span>}
               {href ? (
@@ -45,12 +45,18 @@ export default function Home(): ReactElement {
                   title={description ?? name}
                   target={href.startsWith('http') ? '_blank' : '_self'}
                   rel="noreferrer"
-                  className="opacity-60 hover:opacity-100 underline"
+                  className={`opacity-60 hover:opacity-100 underline ${
+                    isHighlighted ? 'font-bold' : ''
+                  }`}
                 >
                   {name}
                 </Link>
               ) : (
-                <span className="opacity-60">{name}</span>
+                <span
+                  className={`opacity-60 ${isHighlighted ? 'font-bold' : ''}`}
+                >
+                  {name}
+                </span>
               )}
             </Fragment>
           ))}
@@ -106,8 +112,8 @@ export default function Home(): ReactElement {
             className="underline hover:text-black"
           >
             Codepen
-          </Link>
-          for code examples
+          </Link>{' '}
+          for code examples.
         </p>
 
         <div className="flex flex-col lg:place-items-center py-10">
