@@ -25,6 +25,7 @@ const projects: ReadonlyArray<Project> = [
       "Worked as a Technical Director for one of MediaMonks biggest clients. Unfortunately due to confidentiality, I can't showcase this.",
     technique: 'React, TypeScript, Muban, WebGL',
     role: 'Technical Director',
+    images: ['confidential.png'],
   },
   {
     title: 'Puntos Colombia',
@@ -377,11 +378,13 @@ export default function Portfolio(): ReactElement {
               />
             )}
 
-            <ImageCarousel
-              title={title}
-              images={images}
-              autoScrollOffset={index * 200}
-            />
+            {images && (
+              <ImageCarousel
+                title={title}
+                images={images}
+                autoScrollOffset={index * 200}
+              />
+            )}
 
             <div
               className={`w-full  pr-8 lg:pr-32 ${
