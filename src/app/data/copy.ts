@@ -81,6 +81,7 @@ type Skill = {
   description?: string;
   href?: string;
   alternatives?: ReadonlyArray<string>;
+  isHighlighted?: boolean;
 };
 
 export const skills: ReadonlyArray<Skill> = [
@@ -94,6 +95,19 @@ export const skills: ReadonlyArray<Skill> = [
     name: 'TypeScript',
     href: 'https://www.typescriptlang.org/',
     alternatives: ['TS'],
+    isHighlighted: true,
+  },
+  {
+    name: 'React',
+    href: 'https://react.dev/',
+    alternatives: ['ReactJS'],
+    isHighlighted: true,
+  },
+  {
+    name: 'NextJS',
+    href: 'https://nextjs.org/',
+    alternatives: ['Next.JS'],
+    isHighlighted: true,
   },
   {
     name: 'JavaScript',
@@ -104,8 +118,9 @@ export const skills: ReadonlyArray<Skill> = [
     name: 'Architecture',
     href: 'https://en.wikipedia.org/wiki/Software_architecture',
     description: 'Software Architecture',
+    isHighlighted: true,
   },
-  { name: 'Leadership' },
+  { name: 'Leadership', isHighlighted: true },
   { name: 'Mentorship' },
   { name: 'Commitment' },
   { name: 'Ownership' },
@@ -121,8 +136,6 @@ export const skills: ReadonlyArray<Skill> = [
     href: 'https://en.wikipedia.org/wiki/Agile_management',
     description: 'Agile manegement',
   },
-  { name: 'React', href: 'https://react.dev/', alternatives: ['ReactJS'] },
-  { name: 'NextJS', href: 'https://nextjs.org/', alternatives: ['Next.JS'] },
   { name: 'Redux', href: 'https://redux.js.org/' },
   {
     name: 'Angular',
