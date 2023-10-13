@@ -11,11 +11,20 @@ type Project = {
   href?: string;
   technique?: string;
   role: string;
-  images: ReadonlyArray<string>;
+  images?: ReadonlyArray<string>;
   hasFwa?: boolean;
 };
 
 const projects: ReadonlyArray<Project> = [
+  {
+    title: 'Confidential',
+    employer: 'MediaMonks',
+    year: '2021-2023',
+    description:
+      "Worked as a Technical Director for one of MediaMonks biggest clients. Unfortunately due to confidentiality, I can't showcase this.",
+    technique: 'React, TypeScript, Muban, WebGL',
+    role: 'Technical Director',
+  },
   {
     title: 'Puntos Colombia',
     employer: 'MediaMonks',
@@ -367,16 +376,18 @@ export default function Portfolio(): ReactElement {
               />
             )}
 
-            <div className="w-auto">
-              <Image
-                key={images[0]}
-                src={`/img/portfolio/${images[0]}`}
-                width={600}
-                height={600}
-                alt={`image ${title}`}
-                className="rounded-lg max-lg:mb-5 max-lg:w-full"
-              />
-            </div>
+            {images && (
+              <div className="w-auto">
+                <Image
+                  key={images[0]}
+                  src={`/img/portfolio/${images[0]}`}
+                  width={600}
+                  height={600}
+                  alt={`image ${title}`}
+                  className="rounded-lg max-lg:mb-5 max-lg:w-full"
+                />
+              </div>
+            )}
 
             <div
               className={`w-full lg:pr-32 ${
