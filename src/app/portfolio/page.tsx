@@ -12,11 +12,21 @@ type Project = {
   href?: string;
   technique?: string;
   role: string;
-  images: ReadonlyArray<string>;
+  images?: ReadonlyArray<string>;
   hasFwa?: boolean;
 };
 
 const projects: ReadonlyArray<Project> = [
+  {
+    title: 'Confidential',
+    employer: 'MediaMonks',
+    year: '2021-2023',
+    description:
+      "Worked as a Technical Director for one of MediaMonks biggest clients. Unfortunately due to confidentiality, I can't showcase this.",
+    technique: 'React, TypeScript, Muban, WebGL',
+    role: 'Technical Director',
+    images: ['confidential.png'],
+  },
   {
     title: 'Puntos Colombia',
     employer: 'MediaMonks',
@@ -368,11 +378,13 @@ export default function Portfolio(): ReactElement {
               />
             )}
 
-            <ImageCarousel
-              title={title}
-              images={images}
-              autoScrollOffset={index * 200}
-            />
+            {images && (
+              <ImageCarousel
+                title={title}
+                images={images}
+                autoScrollOffset={index * 200}
+              />
+            )}
 
             <div
               className={`w-full  pr-8 lg:pr-32 ${
