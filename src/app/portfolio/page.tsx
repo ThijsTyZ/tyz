@@ -395,7 +395,7 @@ export default function Portfolio(): ReactElement {
               <h3 className="mb-3 opacity-40">
                 {year} - {employer}
               </h3>
-              <p className="text-sm opacity-70 text-justify">
+              <p className="text-sm opacity-70 sm:text-justify">
                 {description}
                 <br />
                 {technique && (
