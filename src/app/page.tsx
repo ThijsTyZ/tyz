@@ -4,6 +4,7 @@ import ArticleBlock from '@/app/components/ArticleBlock';
 import { Cta } from '@/app/components/Cta';
 import { Hero } from '@/app/components/Hero';
 import { skills, recommendations, paths, articles } from '@/app/data/copy';
+import { Logo } from '@/app/components/Logo';
 
 export default function Home(): ReactElement {
   return (
@@ -75,6 +76,10 @@ export default function Home(): ReactElement {
         </div>
       </section>
       {/**/}
+
+      <section className="p-5 mt-4">
+        <Logo />
+      </section>
 
       {/* Portfolio */}
       <section className="p-5 w-full mt-4 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-transparent rounded-xl text-white text-sm">

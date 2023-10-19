@@ -3,7 +3,7 @@ import { type ReactElement } from 'react';
 
 export function Hero(): ReactElement {
   return (
-    <section className="max-w-5xl flex flex-col text-white lg:pl-10 py-10">
+    <section className="max-w-5xl flex flex-col text-white lg:pl-10 lg:py-10">
       <div className="max-lg:flex max-lg:flex-col max-lg:items-center">
         <Image
           src="/img/thijs.jpeg"
