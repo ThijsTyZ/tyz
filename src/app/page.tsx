@@ -3,8 +3,8 @@ import { type ReactElement, Fragment } from 'react';
 import ArticleBlock from '@/app/components/ArticleBlock';
 import { Cta } from '@/app/components/Cta';
 import { Hero } from '@/app/components/Hero';
-import { skills, recommendations, paths, articles } from '@/app/data/copy';
 import { Logo } from '@/app/components/Logo';
+import { skills, recommendations, paths, articles } from '@/app/data/copy';
 
 export default function Home(): ReactElement {
   return (
