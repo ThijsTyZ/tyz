@@ -1,15 +1,20 @@
 import Link from 'next/link';
 import { type ReactElement } from 'react';
+import { Logo } from '@/app/components/Logo';
 
 export function Header(): ReactElement {
   return (
     <header className="w-full flex flex-col items-center px-10 py-5 text-white">
       <div className="flex max-w-5xl w-full">
-        <Link className="w-1/2 hover:no-underline" href="/">
-          <h1 className="text-4xl tracking-[-.1em]">TYZ</h1>
-          <h3 className="max-sm:text-sm">Think. Yield. Zenith.</h3>
+        <Link
+          className="w-1/2 hover:no-underline max-sm:scale-75 max-sm:-translate-x-10 max-sm:-translate-y-4"
+          href="/"
+        >
+          <Logo />
         </Link>
-        <p className="w-1/2 text-right text-s leading-8">
+        <div className="w-1/2 text-right text-s leading-8 max-sm:text-sm">
+          <h1 className="text-3xl max-sm:text-xl">TYZ</h1>
+          <h3 className="">Think. Yield. Zenith.</h3>
           <a
             href="mailto:thijs@tyz.nl"
             title="Contact me by email on thijs@tyz.nl"
@@ -24,7 +29,7 @@ export function Header(): ReactElement {
           >
             +31 (0) 6 899 36 821
           </a>
-        </p>
+        </div>
       </div>
     </header>
   );
