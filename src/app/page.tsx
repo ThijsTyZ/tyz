@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { type ReactElement, Fragment } from 'react';
+import { type ReactElement } from 'react';
 import ArticleBlock from '@/app/components/ArticleBlock';
 import { Cta } from '@/app/components/Cta';
 import { Hero } from '@/app/components/Hero';
@@ -47,34 +47,39 @@ export default function Home(): ReactElement {
       {/**/}
 
       {/* Skills */}
-      <section className="p-5 mt-4 relative flex flex-col bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.8)] to-transparent rounded-xl text-black">
+      <section className="p-5 mt-4 relative  bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.8)] to-transparent rounded-xl text-black w-full">
         <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
-        <p className="text-sm">
-          {skills.map(({ name, href, description, isHighlighted }, index) => (
-            <Fragment key={name}>
-              {Boolean(index) && <span className="opacity-60">, </span>}
-              {href ? (
-                <Link
-                  href={`${href}`}
-                  title={description ?? name}
-                  target={href.startsWith('http') ? '_blank' : '_self'}
-                  rel="noreferrer"
-                  className={`opacity-60 hover:opacity-100 underline ${
-                    isHighlighted ? 'font-bold' : ''
-                  }`}
-                >
-                  {name}
-                </Link>
-              ) : (
-                <span
-                  className={`opacity-60 ${isHighlighted ? 'font-bold' : ''}`}
-                >
-                  {name}
-                </span>
-              )}
-            </Fragment>
+
+        <ul className="text-sm grid lg:grid-cols-3 grid-cols-2">
+          {/* eslint-disable-next-line @typescript-eslint/no-shadow */}
+          {skills.map(({ group, skills }) => (
+            <li key={group}>
+              <span className="font-semibold">{group}</span>
+              <ul className="ml-4 mb-4">
+                {skills.map(({ name, href, description }) => (
+                  <li key={name}>
+                    {href ? (
+                      <Link
+                        href={`${href}`}
+                        title={description ?? name}
+                        target={href.startsWith('http') ? '_blank' : '_self'}
+                        rel="noreferrer"
+                        className="opacity-60 hover:opacity-100"
+                      >
+                        {name}{' '}
+                        <span className="inline-block rotate-90 opacity-30">
+                          ⎋
+                        </span>
+                      </Link>
+                    ) : (
+                      <span className="opacity-60">{name}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </li>
           ))}
-        </p>
+        </ul>
 
         <div className="flex flex-col lg:place-items-center py-10">
           <Cta
