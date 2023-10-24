@@ -1,5 +1,31 @@
 import type { ValueOf } from 'next/constants';
 
+export const slogan = 'Think. Yield. Zenith.';
+export const name = 'Thijs Broerse';
+export const role = 'Freelance Senior Frontend Developer / Interim Tech Lead';
+export const title = `TYZ - ${name} - ${role}`;
+
+export const description =
+  'Hi, I&apos;m Thijs Broerse, a passionate and highly skilled frontend expert with over 20 years of experience in web development and leadership. I excel at setting up, developing, and maintaining complex frontend systems, as well as leading international development teams. I have contributed to numerous award-winning projects and specialize in TypeScript, React, NextJS, Leadership and architecture.';
+
+type Link = {
+  href: string;
+  title: string;
+  text: string;
+};
+
+export const email: Link = {
+  href: 'mailto:thijs@tyz.nl',
+  title: 'Contact me by email on thijs@tyz.nl',
+  text: 'thijs@tyz.nl',
+};
+
+export const phonenumber: Link = {
+  href: 'tel:+31689936821',
+  title: 'call me on my phone-number +31 (0) 6 899 36 821',
+  text: '+31 (0) 6 899 36 821',
+};
+
 export const paths = {
   home: '/',
   portfolio: '/portfolio',
@@ -296,6 +322,7 @@ export const keywords: Array<string> = [
   'Development',
   'Website',
   ...skills.flatMap<string>(
+    // eslint-disable-next-line @typescript-eslint/no-shadow
     ({ name, description, alternatives = [] }) =>
       [name, description, ...alternatives].filter(Boolean) as Array<string>,
   ),

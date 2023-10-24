@@ -4,7 +4,14 @@ import ArticleBlock from '@/app/components/ArticleBlock';
 import { Cta } from '@/app/components/Cta';
 import { Hero } from '@/app/components/Hero';
 import { Logo } from '@/app/components/Logo';
-import { skills, recommendations, paths, articles } from '@/app/data/copy';
+import {
+  skills,
+  recommendations,
+  paths,
+  articles,
+  email,
+  phonenumber,
+} from '@/app/data/copy';
 
 export default function Home(): ReactElement {
   return (
@@ -25,10 +32,16 @@ export default function Home(): ReactElement {
 
       {/* CTA */}
       <section className="flex flex-col lg:place-items-center py-5">
-        <Cta href="mailto:thijs@tyz.nl">Email thijs@tyz.nl</Cta>
+        <Cta href={email.href} title={email.title}>
+          Email {email.text}
+        </Cta>
 
-        <a href="tel:+31689936821" className="text-white text-m text-center">
-          or call me on +31 (0) 6 899 36 821
+        <a
+          href={phonenumber.href}
+          title={phonenumber.title}
+          className="text-white text-m text-center"
+        >
+          or call me on {phonenumber.text}
         </a>
       </section>
       {/**/}

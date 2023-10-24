@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { type ReactElement } from 'react';
 import { Logo } from '@/app/components/Logo';
+import { email, phonenumber, slogan } from '@/app/data/copy';
 
 export function Header(): ReactElement {
   return (
@@ -14,20 +15,17 @@ export function Header(): ReactElement {
         </Link>
         <div className="w-1/2 text-right text-s leading-8 max-sm:text-sm">
           <h1 className="text-3xl max-sm:text-xl">TYZ</h1>
-          <h3 className="">Think. Yield. Zenith.</h3>
-          <a
-            href="mailto:thijs@tyz.nl"
-            title="Contact me by email on thijs@tyz.nl"
-          >
-            thijs@tyz.nl
+          <h3 className="">{slogan}</h3>
+          <a href={email.href} title={email.title}>
+            {email.text}
           </a>
           <br />
           <a
-            href="tel:+31689936821"
-            title="phonenumer"
+            href={phonenumber.href}
+            title={phonenumber.title}
             className="max-sm:text-sm"
           >
-            +31 (0) 6 899 36 821
+            {phonenumber.text}
           </a>
         </div>
       </div>
