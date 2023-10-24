@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { type ReactElement } from 'react';
+import { name, role } from '@/app/data/copy';
 
 export function Hero(): ReactElement {
   return (
@@ -12,10 +13,18 @@ export function Hero(): ReactElement {
           height={260}
           className="rounded-full lg:float-left lg:mr-10 mt-8 border-4 border-white border-opacity-60"
         />
-        <h2 className="text-6xl py-5">Thijs Broerse</h2>
+        <h2 className="text-6xl py-5">{name}</h2>
         <h3 className="opacity-90 text-3xl max-w-5xl">
-          Freelance Senior Frontend Developer/
-          <br /> Interim Tech Lead
+          {role.split('/').map((text, index) => (
+            <>
+              {index > 0 && (
+                <>
+                  /<br />
+                </>
+              )}
+              {text}
+            </>
+          ))}
         </h3>
         <p className="lg:text-justify opacity-70 pt-4">
           Hi, I&apos;m Thijs Broerse, a passionate and highly skilled frontend

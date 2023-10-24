@@ -1,5 +1,31 @@
 import type { ValueOf } from 'next/constants';
 
+export const slogan = 'Think. Yield. Zenith.';
+export const name = 'Thijs Broerse';
+export const role = 'Freelance Senior Frontend Developer / Interim Tech Lead';
+export const title = `TYZ - ${name} - ${role}`;
+
+export const description =
+  'Hi, I&apos;m Thijs Broerse, a passionate and highly skilled frontend expert with over 20 years of experience in web development and leadership. I excel at setting up, developing, and maintaining complex frontend systems, as well as leading international development teams. I have contributed to numerous award-winning projects and specialize in TypeScript, React, NextJS, Leadership and architecture.';
+
+type Link = {
+  href: string;
+  title: string;
+  text: string;
+};
+
+export const email: Link = {
+  href: 'mailto:thijs@tyz.nl',
+  title: 'Contact me by email on thijs@tyz.nl',
+  text: 'thijs@tyz.nl',
+};
+
+export const phonenumber: Link = {
+  href: 'tel:+31689936821',
+  title: 'call me on my phone-number +31 (0) 6 899 36 821',
+  text: '+31 (0) 6 899 36 821',
+};
+
 export const paths = {
   home: '/',
   portfolio: '/portfolio',
@@ -84,206 +110,355 @@ type Skill = {
   isHighlighted?: boolean;
 };
 
-export const skills: ReadonlyArray<Skill> = [
+export const skills: ReadonlyArray<{
+  group: string;
+  skills: ReadonlyArray<Skill>;
+}> = [
   {
-    name: 'Frontend',
-    href: 'https://en.wikipedia.org/wiki/Front-end_web_development',
-    description: 'Frontend Web Development',
-    alternatives: ['Front End', 'Front-end', 'Web Development'],
-  },
-  {
-    name: 'TypeScript',
-    href: 'https://www.typescriptlang.org/',
-    alternatives: ['TS'],
-    isHighlighted: true,
-  },
-  {
-    name: 'React',
-    href: 'https://react.dev/',
-    alternatives: ['ReactJS'],
-    isHighlighted: true,
-  },
-  {
-    name: 'NextJS',
-    href: 'https://nextjs.org/',
-    alternatives: ['Next.JS'],
-    isHighlighted: true,
-  },
-  {
-    name: 'JavaScript',
-    href: 'https://en.wikipedia.org/wiki/JavaScript',
-    alternatives: ['JS'],
-  },
-  {
-    name: 'Architecture',
-    href: 'https://en.wikipedia.org/wiki/Software_architecture',
-    description: 'Software Architecture',
-    isHighlighted: true,
-  },
-  { name: 'Leadership', isHighlighted: true },
-  { name: 'Mentorship' },
-  { name: 'Commitment' },
-  { name: 'Ownership' },
-  { name: 'Motivator' },
-  { name: 'Teacher' },
-  {
-    name: 'Scrum',
-    href: 'https://en.wikipedia.org/wiki/Scrum_(software_development)',
-    description: 'Scrum Software Development',
-  },
-  {
-    name: 'Agile',
-    href: 'https://en.wikipedia.org/wiki/Agile_management',
-    description: 'Agile manegement',
-  },
-  { name: 'Redux', href: 'https://redux.js.org/' },
-  {
-    name: 'Angular',
-    href: 'https://angular.io/',
-    alternatives: ['AngularJS', 'AngularTS'],
-  },
-  { name: 'Vue', href: 'https://vuejs.org/', alternatives: ['VueJS', 'VueTS'] },
-  {
-    name: 'GSAP',
-    href: 'https://greensock.com/gsap/',
-    description: 'Green Sock Animation Platform',
-    alternatives: ['TweenLite', 'TweenMax'],
-  },
-  {
-    name: 'HTML',
-    description: 'HyperText Markup Language',
-    href: 'https://en.wikipedia.org/wiki/HTML',
-  },
-  {
-    name: 'CSS',
-    description: 'Cascading Style Sheets',
-    href: 'https://en.wikipedia.org/wiki/CSS',
-  },
-  {
-    name: 'JSON',
-    description: 'JavaScript Object Notation',
-    href: 'https://www.json.org/json-en.html',
-  },
-  {
-    name: 'a11y',
-    href: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility',
-    description: 'Accessibility',
-  },
-  {
-    name: 'i18n',
-    href: 'https://en.wikipedia.org/wiki/Internationalization_and_localization',
-    description: 'Internationalization and localization',
-  },
-  {
-    name: 'OOP',
-    href: 'https://en.wikipedia.org/wiki/Object-oriented_programming',
-    description: 'Object-Oriented Programming',
-  },
-  {
-    name: 'FP',
-    href: 'https://en.wikipedia.org/wiki/Functional_programming',
-    description: 'Functional programming',
-  },
-  {
-    name: 'PWA',
-    href: 'https://en.wikipedia.org/wiki/Progressive_web_app',
-    description: 'Progressive Web App',
-  },
-  {
-    name: 'SPA',
-    href: 'https://en.wikipedia.org/wiki/Single-page_application',
-    description: 'Single Page Application',
-  },
-  {
-    name: 'SSR',
-    href: 'https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering',
-    description: 'Server-Side Rendering',
-  },
-  {
-    name: 'SSG',
-    href: 'https://en.wikipedia.org/wiki/Static_site_generator',
-    description: 'Static Site Generator',
-  },
-  {
-    name: 'AWS',
-    href: 'https://aws.amazon.com/',
-    description: 'Amazon Web Services',
-    alternatives: ['Cloud Computing Services'],
-  },
-  {
-    name: 'UI',
-    href: 'https://en.wikipedia.org/wiki/User_interface',
-    description: 'User Interface',
-  },
-  {
-    name: 'UX',
-    href: 'https://en.wikipedia.org/wiki/User_experience',
-    description: 'User Experience',
-  },
-  { name: 'GraphQL', href: 'https://en.wikipedia.org/wiki/GraphQL' },
-  { name: 'Lottie', href: 'https://airbnb.design/lottie/' },
-  {
-    name: 'Canvas',
-    href: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API',
-    description: 'Canvas API',
-  },
-  {
-    name: 'WebGL',
-    href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API',
-    description: 'WebGL: 2D and 3D graphics for the web',
-  },
-  { name: 'Linting', href: 'https://github.com/mediamonks/eslint-config' },
-  {
-    name: 'Coding Standards',
-    href: 'https://github.com/mediamonks/frontend-coding-standards',
-  },
-  {
-    name: 'Gitflow',
-    href: 'https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow',
-    description: 'Gitflow Workflow',
-  },
-  {
-    name: 'REST',
-    href: 'https://en.wikipedia.org/wiki/Representational_state_transfer',
-    description: 'Representational state transfer',
-  },
-  {
-    name: 'Google Maps API',
-    href: 'https://developers.google.com/maps',
-    alternatives: [
-      'Maps Embed API',
-      'Maps JavaScript API',
-      'Places Library',
-      'Street View Static API',
-      'Directions API',
-      'Distance Matrix API',
-      'Elevation API',
-      'Geocoding API',
-      'Geolocation API',
-      'Places API',
-      'Roads API',
-      'Time Zone API',
+    group: 'Coding & programming',
+    skills: [
+      {
+        name: 'Frontend Web Development',
+        href: 'https://en.wikipedia.org/wiki/Front-end_web_development',
+        alternatives: ['Front End', 'Front-end', 'Web Development'],
+        isHighlighted: true,
+      },
+      {
+        name: 'Full-stack Web Development',
+        alternatives: ['Full-stack'],
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://www.typescriptlang.org/',
+        alternatives: ['TS'],
+        isHighlighted: true,
+      },
+      {
+        name: 'JavaScript',
+        href: 'https://en.wikipedia.org/wiki/JavaScript',
+        alternatives: ['JS'],
+      },
+      {
+        name: 'NodeJS',
+        href: 'https://nodejs.org/',
+        description:
+          'Node.js® is an open-source, cross-platform JavaScript runtime environment.',
+        alternatives: ['Node', 'Node.JS'],
+      },
+      {
+        name: 'FP',
+        href: 'https://en.wikipedia.org/wiki/Functional_programming',
+        description: 'Functional programming',
+      },
+      {
+        name: 'OOP',
+        href: 'https://en.wikipedia.org/wiki/Object-oriented_programming',
+        description: 'Object-Oriented Programming',
+      },
+      {
+        name: 'REST',
+        href: 'https://en.wikipedia.org/wiki/Representational_state_transfer',
+        description: 'Representational state transfer',
+      },
+      {
+        name: 'JSON',
+        description: 'JavaScript Object Notation',
+        href: 'https://www.json.org/json-en.html',
+      },
+      { name: 'GraphQL', href: 'https://en.wikipedia.org/wiki/GraphQL' },
+      { name: 'Linting', href: 'https://github.com/mediamonks/eslint-config' },
+      {
+        name: 'Coding Standards',
+        href: 'https://github.com/mediamonks/frontend-coding-standards',
+      },
+
+      { name: 'Debugging' },
+      { name: 'Code Review' },
     ],
   },
   {
-    name: 'Facebook API',
-    href: 'https://developers.facebook.com/docs/',
-    alternatives: ['Meta App Development', 'Graph API'],
+    group: 'Frameworks & Libraries',
+    skills: [
+      {
+        name: 'React',
+        href: 'https://react.dev/',
+        alternatives: ['ReactJS'],
+        isHighlighted: true,
+      },
+      {
+        name: 'NextJS',
+        href: 'https://nextjs.org/',
+        alternatives: ['Next.JS'],
+        isHighlighted: true,
+      },
+      {
+        name: 'Angular',
+        href: 'https://angular.io/',
+        alternatives: ['AngularJS', 'AngularTS'],
+      },
+      {
+        name: 'Vue',
+        href: 'https://vuejs.org/',
+        alternatives: ['VueJS', 'VueTS'],
+      },
+      { name: 'Redux', href: 'https://redux.js.org/' },
+      {
+        name: 'Formik',
+        href: 'https://formik.org/',
+        description: 'Form library for React',
+      },
+      {
+        name: 'Zod',
+        href: 'https://zod.dev/',
+        description:
+          'TypeScript-first schema validation with static type inference',
+      },
+      {
+        name: 'AWS',
+        href: 'https://aws.amazon.com/',
+        description: 'Amazon Web Services',
+        alternatives: ['Cloud Computing Services'],
+      },
+      {
+        name: 'PWA',
+        href: 'https://en.wikipedia.org/wiki/Progressive_web_app',
+        description: 'Progressive Web App',
+      },
+      {
+        name: 'SPA',
+        href: 'https://en.wikipedia.org/wiki/Single-page_application',
+        description: 'Single Page Application',
+      },
+      {
+        name: 'SSR',
+        href: 'https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering',
+        description: 'Server-Side Rendering',
+      },
+      {
+        name: 'SSG',
+        href: 'https://en.wikipedia.org/wiki/Static_site_generator',
+        description: 'Static Site Generator',
+      },
+      {
+        name: 'Google Maps API',
+        href: 'https://developers.google.com/maps',
+        alternatives: [
+          'Maps Embed API',
+          'Maps JavaScript API',
+          'Places Library',
+          'Street View Static API',
+          'Directions API',
+          'Distance Matrix API',
+          'Elevation API',
+          'Geocoding API',
+          'Geolocation API',
+          'Places API',
+          'Roads API',
+          'Time Zone API',
+        ],
+      },
+      {
+        name: 'Facebook API',
+        href: 'https://developers.facebook.com/docs/',
+        alternatives: ['Meta App Development', 'Graph API'],
+      },
+    ],
   },
   {
-    name: 'Formik',
-    href: 'https://formik.org/',
-    description: 'Form library for React',
+    group: 'UI & Animation',
+    skills: [
+      {
+        name: 'HTML',
+        description: 'HyperText Markup Language',
+        href: 'https://en.wikipedia.org/wiki/HTML',
+      },
+      {
+        name: 'CSS',
+        description: 'Cascading Style Sheets',
+        href: 'https://en.wikipedia.org/wiki/CSS',
+      },
+
+      {
+        name: 'a11y',
+        href: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility',
+        description: 'Accessibility',
+      },
+      {
+        name: 'i18n',
+        href: 'https://en.wikipedia.org/wiki/Internationalization_and_localization',
+        description: 'Internationalization and localization',
+      },
+      {
+        name: 'UI',
+        href: 'https://en.wikipedia.org/wiki/User_interface',
+        description: 'User Interface',
+      },
+      {
+        name: 'UX',
+        href: 'https://en.wikipedia.org/wiki/User_experience',
+        description: 'User Experience',
+      },
+      {
+        name: 'Tailwind CSS',
+        href: 'https://tailwindcss.com/',
+        alternatives: ['Tailwind'],
+        description:
+          'A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.',
+      },
+      {
+        name: 'Vanilla Extract CSS',
+        href: 'https://vanilla-extract.style/',
+        description: 'Zero-runtime Stylesheets in TypeScript.',
+      },
+      {
+        name: 'GSAP',
+        href: 'https://greensock.com/gsap/',
+        description: 'Green Sock Animation Platform',
+        alternatives: ['TweenLite', 'TweenMax'],
+      },
+      { name: 'Lottie', href: 'https://airbnb.design/lottie/' },
+      {
+        name: 'Canvas',
+        href: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API',
+        description: 'Canvas API',
+      },
+      {
+        name: 'WebGL',
+        href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API',
+        description: 'WebGL: 2D and 3D graphics for the web',
+      },
+    ],
   },
-  { name: 'Debugging' },
-  { name: 'Code Review' },
   {
-    name: 'Technical Director',
-    href: 'https://en.wikipedia.org/wiki/Technical_director',
-    alternatives: ['TD'],
+    group: 'Roles',
+    skills: [
+      {
+        name: 'Senior Frontend Developer',
+        alternatives: ['Principal Frontend Developer'],
+        isHighlighted: true,
+      },
+      {
+        name: 'Tech Lead',
+        alternatives: ['Lead Developer', 'Lead Frontend Developer'],
+        isHighlighted: true,
+      },
+      {
+        name: 'Software Architect',
+        href: 'https://en.wikipedia.org/wiki/Software_architecture',
+        isHighlighted: true,
+      },
+      {
+        name: 'Technical Director',
+        href: 'https://en.wikipedia.org/wiki/Technical_director',
+        alternatives: ['TD'],
+        isHighlighted: true,
+      },
+    ],
   },
-  { name: 'English', alternatives: ['EN', 'Engels'] },
-  { name: 'Nederlands', alternatives: ['Dutch', 'NL'] },
+  {
+    group: 'Management & processes',
+    skills: [
+      {
+        name: 'Scrum',
+        href: 'https://en.wikipedia.org/wiki/Scrum_(software_development)',
+        description: 'Scrum Software Development',
+      },
+      {
+        name: 'Agile',
+        href: 'https://en.wikipedia.org/wiki/Agile_management',
+        description: 'Agile manegement',
+      },
+      {
+        name: 'Gitflow',
+        href: 'https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow',
+        description: 'Gitflow Workflow',
+      },
+      {
+        name: 'Monorepo',
+        href: 'https://en.wikipedia.org/wiki/Monorepo',
+        description:
+          'In version-control systems, a software-development strategy in which the code for a number of projects is stored in the same repository.',
+      },
+      {
+        name: 'CI/CD',
+        href: 'https://en.wikipedia.org/wiki/CI/CD',
+        description: 'Continuous integration (CI) and continuous delivery (CD)',
+        alternatives: [
+          'Continuous Integration',
+          'Continuous Delivery',
+          'Continuous Deployment',
+        ],
+      },
+    ],
+  },
+  {
+    group: 'Testing',
+    skills: [
+      {
+        name: 'Jest',
+        href: 'https://jestjs.io/',
+        description:
+          'Jest is a delightful JavaScript Testing Framework with a focus on simplicity.',
+      },
+      {
+        name: 'Jasmine',
+        href: 'https://jasmine.github.io/',
+        description:
+          'Jasmine is a behavior-driven development framework for testing JavaScript code.',
+      },
+      {
+        name: 'Mocha',
+        href: 'https://mochajs.org/',
+        description:
+          'Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser',
+      },
+      { name: 'Karma', href: 'https://karma-runner.github.io/' },
+      { name: 'Cypress', href: 'https://www.cypress.io/' },
+      {
+        name: 'Storybook',
+        href: 'https://storybook.js.org/',
+        description:
+          'Storybook is a frontend workshop for building UI components and pages in isolation.',
+      },
+    ],
+  },
+  {
+    group: 'Personal characteristics',
+    skills: [
+      { name: 'Leadership', isHighlighted: true },
+      { name: 'Mentorship' },
+      { name: 'Commitment' },
+      { name: 'Ownership' },
+      { name: 'Motivator' },
+      { name: 'Teacher' },
+    ],
+  },
+
+  {
+    group: 'Core values',
+    skills: [
+      { name: 'Passion', description: 'deep enthusiasm and dedication.' },
+      {
+        name: 'Reliability',
+        description: 'consistent dependability and trustworthiness.\n',
+      },
+      {
+        name: 'Sociability',
+        description: 'valuing meaningful connections with others',
+      },
+      {
+        name: 'Authenticity',
+        description: 'embracing and expressing true self\n',
+      },
+    ],
+  },
+  {
+    group: 'Languages',
+    skills: [
+      { name: 'English', alternatives: ['EN', 'Engels'] },
+      { name: 'Nederlands', alternatives: ['Dutch', 'NL'] },
+    ],
+  },
 ] as const;
 
 export const keywords: Array<string> = [
@@ -292,12 +467,21 @@ export const keywords: Array<string> = [
   'Freelance',
   'Interim Frontend Lead',
   'Interim Tech Lead',
+  'Frontend expert',
   'Developer',
+  'Frontend Developer',
+  'Senior Frontend Developer',
+  'Principal Frontend Developer',
+  'Senior Full-stack Developer',
   'Development',
   'Website',
-  ...skills.flatMap<string>(
-    ({ name, description, alternatives = [] }) =>
-      [name, description, ...alternatives].filter(Boolean) as Array<string>,
+  // eslint-disable-next-line @typescript-eslint/no-shadow
+  ...skills.flatMap<string>(({ skills }) =>
+    skills.flatMap(
+      // eslint-disable-next-line @typescript-eslint/no-shadow
+      ({ name, description, alternatives = [] }) =>
+        [name, description, ...alternatives].filter(Boolean) as Array<string>,
+    ),
   ),
 ];
 
