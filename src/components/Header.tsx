@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { type ReactElement } from 'react';
-import { Logo } from '@/app/components/Logo';
-import { email, phonenumber, slogan } from '@/app/data/copy';
+import { Logo } from '@/components/Logo';
+import { email, phonenumber, slogan } from '@/data/copy';
 
 export function Header(): ReactElement {
   return (
@@ -13,7 +13,7 @@ export function Header(): ReactElement {
         >
           <Logo />
         </Link>
-        <div className="w-1/2 text-right text-s leading-8 max-sm:text-sm">
+        <div className="w-1/2 text-right text-s leading-8 max-sm:text-sm -mt-2 max-sm:mt-1">
           <h1 className="text-3xl max-sm:text-xl">TYZ</h1>
           <h3 className="">{slogan}</h3>
           <a href={email.href} title={email.title}>

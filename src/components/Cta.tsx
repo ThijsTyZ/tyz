@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ComponentProps, ReactElement, ReactNode } from 'react';
-import type { Path } from '@/app/data/copy';
+import type { Path } from '@/data/copy';
 
 export function Cta({
   children,
