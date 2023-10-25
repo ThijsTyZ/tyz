@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { type ReactElement } from 'react';
-import { name, role } from '@/app/data/copy';
+import { name, role } from '@/data/copy';
 
 export function Hero(): ReactElement {
   return (

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
-import ImageCarousel from '@/app/components/ImageCarousel';
-import { paths } from '@/app/data/copy';
+import ImageCarousel from '@/components/ImageCarousel';
+import { paths } from '@/data/copy';
 
 type Project = {
   title: string;

@@ -2,15 +2,9 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import type { ReactNode, ReactElement } from 'react';
-import { Footer } from '@/app/components/Footer';
-import { Header } from '@/app/components/Header';
-import {
-  keywords,
-  title,
-  description,
-  email,
-  phonenumber,
-} from '@/app/data/copy';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { keywords, title, description, email, phonenumber } from '@/data/copy';
 
 const inter = Inter({ subsets: ['latin'] });
 

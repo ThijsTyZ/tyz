@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { type ReactElement } from 'react';
-import { Logo } from '@/app/components/Logo';
-import { email, phonenumber, slogan } from '@/app/data/copy';
+import { Logo } from '@/components/Logo';
+import { email, phonenumber, slogan } from '@/data/copy';
 
 export function Header(): ReactElement {
   return (

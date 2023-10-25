@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { type ReactElement } from 'react';
-import ArticleBlock from '@/app/components/ArticleBlock';
-import { Cta } from '@/app/components/Cta';
-import { Hero } from '@/app/components/Hero';
-import { Logo } from '@/app/components/Logo';
+import ArticleBlock from '@/components/ArticleBlock';
+import { Cta } from '@/components/Cta';
+import { Hero } from '@/components/Hero';
+import { Logo } from '@/components/Logo';
 import {
   skills,
   recommendations,
@@ -11,7 +11,7 @@ import {
   articles,
   email,
   phonenumber,
-} from '@/app/data/copy';
+} from '@/data/copy';
 
 export default function Home(): ReactElement {
   return (

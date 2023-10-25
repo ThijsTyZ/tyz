@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import type { Article } from '@/app/data/copy';
+import type { Article } from '@/data/copy';
 
 export default function ArticleBlock({
   title,
