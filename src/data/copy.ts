@@ -333,13 +333,13 @@ export const skills: ReadonlyArray<{
     group: 'Roles',
     skills: [
       {
-        name: 'Senior Frontend Developer',
-        alternatives: ['Principal Frontend Developer'],
+        name: 'Frontend Director',
         isHighlighted: true,
       },
       {
-        name: 'Tech Lead',
-        alternatives: ['Lead Developer', 'Lead Frontend Developer'],
+        name: 'Technical Director',
+        href: 'https://en.wikipedia.org/wiki/Technical_director',
+        alternatives: ['TD'],
         isHighlighted: true,
       },
       {
@@ -347,10 +347,15 @@ export const skills: ReadonlyArray<{
         href: 'https://en.wikipedia.org/wiki/Software_architecture',
         isHighlighted: true,
       },
+
       {
-        name: 'Technical Director',
-        href: 'https://en.wikipedia.org/wiki/Technical_director',
-        alternatives: ['TD'],
+        name: 'Tech Lead',
+        alternatives: ['Lead Developer', 'Lead Frontend Developer'],
+        isHighlighted: true,
+      },
+      {
+        name: 'Senior Frontend Developer',
+        alternatives: ['Principal Frontend Developer'],
         isHighlighted: true,
       },
     ],
