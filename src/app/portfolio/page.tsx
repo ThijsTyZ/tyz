@@ -28,6 +28,17 @@ const projects: ReadonlyArray<Project> = [
     images: ['confidential.png'],
   },
   {
+    title: 'Coding Standards & Eslint Configuration',
+    employer: 'MediaMonks',
+    year: '2020-2023',
+    description:
+      'Media.Monks - Frontend Coding Standards open source project. Extensive documentation with a eslint configuration for JavaScript, TypeScript and/or React projects.',
+    href: 'https://github.com/mediamonks/frontend-coding-standards',
+    technique: 'React, TypeScript, JavaScript, CSS, Open Source',
+    role: 'Global Frontend Director',
+    images: ['mediamonks_frontend-coding-standards_1.png'],
+  },
+  {
     title: 'Puntos Colombia',
     employer: 'MediaMonks',
     year: '2020',
