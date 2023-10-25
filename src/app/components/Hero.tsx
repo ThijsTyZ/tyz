@@ -15,11 +15,12 @@ export function Hero(): ReactElement {
         />
         <h2 className="text-6xl py-5">{name}</h2>
         <h3 className="opacity-90 text-3xl max-w-5xl">
-          {role.split('/').map((text, index) => (
+          {role.split(' /').map((text, index) => (
             <>
               {index > 0 && (
                 <>
-                  /<br />
+                  &nbsp;/
+                  <br />
                 </>
               )}
               {text}
