@@ -2,7 +2,7 @@ import type { ValueOf } from 'next/constants';
 
 export const slogan = 'Think. Yield. Zenith.';
 export const name = 'Thijs Broerse';
-export const role = 'Freelance Senior Frontend Developer / Interim Tech Lead';
+export const role = 'Interim Tech Lead / Freelance Senior Frontend Developer';
 export const title = `TYZ - ${name} - ${role}`;
 
 export const description =
@@ -146,6 +146,23 @@ export const skills: ReadonlyArray<{
         alternatives: ['Node', 'Node.JS'],
       },
       {
+        name: 'PHP',
+        href: 'https://www.php.net/',
+        description: 'PHP: Hypertext Preprocessor',
+      },
+      {
+        name: '.NET',
+        href: 'https://dotnet.microsoft.com/',
+        description:
+          '.NET is the free, open-source, cross-platform framework for building modern apps and powerful cloud services.',
+      },
+      {
+        name: 'MySQL',
+        href: 'https://www.mysql.com/',
+        description:
+          'MySQL is an open-source relational database management system.',
+      },
+      {
         name: 'FP',
         href: 'https://en.wikipedia.org/wiki/Functional_programming',
         description: 'Functional programming',
@@ -201,7 +218,23 @@ export const skills: ReadonlyArray<{
         href: 'https://vuejs.org/',
         alternatives: ['VueJS', 'VueTS'],
       },
+      {
+        name: 'Zustand',
+        href: 'https://github.com/pmndrs/zustand',
+        description:
+          'A small, fast and scalable bearbones state-management solution using simplified flux principles.',
+      },
       { name: 'Redux', href: 'https://redux.js.org/' },
+      {
+        name: 'MobX',
+        href: 'https://mobx.js.org/',
+        description: 'Simple, scalable state management.',
+      },
+      {
+        name: 'Prisma',
+        href: 'https://www.prisma.io/',
+        description: 'Database Tools for Modern Application Development',
+      },
       {
         name: 'Formik',
         href: 'https://formik.org/',
@@ -217,27 +250,42 @@ export const skills: ReadonlyArray<{
         name: 'AWS',
         href: 'https://aws.amazon.com/',
         description: 'Amazon Web Services',
-        alternatives: ['Cloud Computing Services'],
+        alternatives: [
+          'Cloud Computing Services',
+          'AppSync',
+          'S3',
+          'Lambda',
+          'AWS Amplify',
+        ],
       },
       {
-        name: 'PWA',
-        href: 'https://en.wikipedia.org/wiki/Progressive_web_app',
-        description: 'Progressive Web App',
+        name: 'Matrix',
+        href: 'https://matrix.org/',
+        description: 'An open network for secure, decentralised communication',
+        alternatives: ['Chat SDK', 'Unified Communication System'],
+        isHighlighted: true,
       },
       {
-        name: 'SPA',
-        href: 'https://en.wikipedia.org/wiki/Single-page_application',
-        description: 'Single Page Application',
+        name: 'MQTT',
+        href: 'https://mqtt.org/',
+        description:
+          'MQTT is an OASIS standard messaging protocol for the Internet of Things (IoT).',
       },
       {
-        name: 'SSR',
-        href: 'https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering',
-        description: 'Server-Side Rendering',
-      },
-      {
-        name: 'SSG',
-        href: 'https://en.wikipedia.org/wiki/Static_site_generator',
-        description: 'Static Site Generator',
+        name: 'Avaya',
+        href: 'https://www.avaya.com/',
+        description:
+          'Communication solutions for businesses, including unified communications, (video) calls, conference calls, meetings, etc.',
+        alternatives: [
+          'Avaya Client SDK',
+          'Avaya Meeting Management SDK',
+          'Unified Communication System',
+          'Telephony',
+          'VoIP',
+          'Conference Calls',
+          'Video Calls',
+          'DevConnect',
+        ],
       },
       {
         name: 'Google Maps API',
@@ -277,6 +325,11 @@ export const skills: ReadonlyArray<{
         description: 'Cascading Style Sheets',
         href: 'https://en.wikipedia.org/wiki/CSS',
       },
+      {
+        name: 'SVG',
+        description: 'Scalable Vector Graphics',
+        href: 'https://developer.mozilla.org/en-US/docs/Web/SVG',
+      },
 
       {
         name: 'a11y',
@@ -297,6 +350,11 @@ export const skills: ReadonlyArray<{
         name: 'UX',
         href: 'https://en.wikipedia.org/wiki/User_experience',
         description: 'User Experience',
+      },
+      {
+        name: 'React MUI',
+        href: 'https://mui.com/',
+        description: 'React Material UI',
       },
       {
         name: 'Tailwind CSS',
@@ -327,13 +385,24 @@ export const skills: ReadonlyArray<{
         href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API',
         description: 'WebGL: 2D and 3D graphics for the web',
       },
+      {
+        name: 'Framer Motion',
+        href: 'https://motion.dev/',
+        description: 'A modern animation library for JavaScript and React',
+      },
     ],
   },
   {
     group: 'Roles',
     skills: [
       {
+        name: 'Tech Lead',
+        alternatives: ['Lead Developer', 'Lead Frontend Developer'],
+        isHighlighted: true,
+      },
+      {
         name: 'Frontend Director',
+        alternatives: ['Frontend Lead', 'Team Lead Frontend'],
         isHighlighted: true,
       },
       {
@@ -342,20 +411,20 @@ export const skills: ReadonlyArray<{
         alternatives: ['TD'],
         isHighlighted: true,
       },
+
       {
         name: 'Software Architect',
         href: 'https://en.wikipedia.org/wiki/Software_architecture',
         isHighlighted: true,
       },
-
-      {
-        name: 'Tech Lead',
-        alternatives: ['Lead Developer', 'Lead Frontend Developer'],
-        isHighlighted: true,
-      },
       {
         name: 'Senior Frontend Developer',
         alternatives: ['Principal Frontend Developer'],
+        isHighlighted: true,
+      },
+      {
+        name: 'Certified Scrum Master',
+        alternatives: ['Scrum Master'],
         isHighlighted: true,
       },
     ],
@@ -394,6 +463,18 @@ export const skills: ReadonlyArray<{
           'Continuous Deployment',
         ],
       },
+      {
+        name: 'Jira',
+        href: 'https://www.atlassian.com/software/jira',
+      },
+      {
+        name: 'Confluence',
+        href: 'https://www.atlassian.com/software/confluence',
+      },
+      {
+        name: 'Swagger',
+        href: 'https://swagger.io/',
+      },
     ],
   },
   {
@@ -404,6 +485,18 @@ export const skills: ReadonlyArray<{
         href: 'https://jestjs.io/',
         description:
           'Jest is a delightful JavaScript Testing Framework with a focus on simplicity.',
+      },
+      {
+        name: 'React Testing Library',
+        href: 'https://testing-library.com/',
+        description:
+          'Simple and complete testing utilities that encourage good testing practices',
+      },
+      {
+        name: 'Storybook',
+        href: 'https://storybook.js.org/',
+        description:
+          'Storybook is a frontend workshop for building UI components and pages in isolation.',
       },
       {
         name: 'Jasmine',
@@ -419,12 +512,6 @@ export const skills: ReadonlyArray<{
       },
       { name: 'Karma', href: 'https://karma-runner.github.io/' },
       { name: 'Cypress', href: 'https://www.cypress.io/' },
-      {
-        name: 'Storybook',
-        href: 'https://storybook.js.org/',
-        description:
-          'Storybook is a frontend workshop for building UI components and pages in isolation.',
-      },
     ],
   },
   {

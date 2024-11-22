@@ -56,7 +56,7 @@ export default function Home(): ReactElement {
             <li key={group}>
               <span className="font-semibold">{group}</span>
               <ul className="ml-4 mb-4">
-                {skills.map(({ name, href, description }) => (
+                {skills.map(({ name, href, description, isHighlighted }) => (
                   <li key={name}>
                     {href ? (
                       <Link
@@ -64,15 +64,23 @@ export default function Home(): ReactElement {
                         title={description ?? name}
                         target={href.startsWith('http') ? '_blank' : '_self'}
                         rel="noreferrer"
-                        className="opacity-60 hover:opacity-100"
+                        className={`opacity-60 hover:opacity-100 ${
+                          isHighlighted ? 'font-bold' : ''
+                        }`}
                       >
-                        {name}{' '}
+                        {name}&nbsp;
                         <span className="inline-block rotate-90 opacity-30">
                           ⎋
                         </span>
                       </Link>
                     ) : (
-                      <span className="opacity-60">{name}</span>
+                      <span
+                        className={`opacity-60 ${
+                          isHighlighted ? 'font-bold' : ''
+                        }`}
+                      >
+                        {name}
+                      </span>
                     )}
                   </li>
                 ))}
