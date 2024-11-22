@@ -1,19 +1,26 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import type { ReactNode, ReactElement } from 'react';
-import { Footer } from '@/app/components/Footer';
-import { Header } from '@/app/components/Header';
-import { keywords } from '@/app/data/copy';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { keywords, title, description, email, phonenumber } from '@/data/copy';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title:
-    'TYZ - Thijs Broerse - Interim Tech Lead & Freelance Frontend Architect',
-  description:
-    'Highly skilled Frontend expert with 20+ years of experience in web development and leadership. Able to set up, develop and maintain complex (frontend) systems, leading (international) development teams. Worked on many (award winning) projects specialized in scripting and architecture.',
+  title,
+  description,
   keywords,
+  openGraph: {
+    type: 'website',
+    title,
+    description,
+    images: ['/img/thijs.jpeg'],
+    emails: [email.text],
+    phoneNumbers: [phonenumber.text],
+  },
 };
 
 export default function RootLayout({
@@ -32,6 +39,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
-import ImageCarousel from '@/app/components/ImageCarousel';
-import { paths } from '@/app/data/copy';
+import ImageCarousel from '@/components/ImageCarousel';
+import { paths } from '@/data/copy';
 
 type Project = {
   title: string;
@@ -26,6 +26,17 @@ const projects: ReadonlyArray<Project> = [
     technique: 'React, TypeScript, Muban, WebGL',
     role: 'Technical Director',
     images: ['confidential.png'],
+  },
+  {
+    title: 'Coding Standards & Eslint Configuration',
+    employer: 'MediaMonks',
+    year: '2020-2023',
+    description:
+      'Media.Monks - Frontend Coding Standards open source project. Extensive documentation with a eslint configuration for JavaScript, TypeScript and/or React projects.',
+    href: 'https://github.com/mediamonks/frontend-coding-standards',
+    technique: 'React, TypeScript, JavaScript, CSS, Open Source',
+    role: 'Global Frontend Director',
+    images: ['mediamonks_frontend-coding-standards_1.png'],
   },
   {
     title: 'Puntos Colombia',
