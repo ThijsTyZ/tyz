@@ -18,6 +18,35 @@ type Project = {
 
 const projects: ReadonlyArray<Project> = [
   {
+    title: 'Unified Communication platform',
+    employer: 'Freelance - Pridis',
+    year: '2024',
+    description: (
+      <>
+        Lead an international team of Frontend developers in creating a highly
+        secure, web-based Unified Communication platform for a major government
+        organization. Leveraging technologies such as React, Avaya, Matrix,
+        MQTT, we deliver solutions that meet stringent quality and security
+        standards. <br />
+        <br />
+        As the architect and technical lead, I oversee the frontend
+        application&apos;s overall quality. My role extends to making strategic
+        decisions, defining technical requirements, and maintaining alignment
+        with project goals. <br />
+        <br />
+        (Co-)developing the application ○ Serve as Scrum Master for the web
+        team, facilitating Agile processes and ensuring efficient project
+        delivery.
+        <br />
+        <br />
+        Unfortunately due to confidentiality, I can&apos;t showcase this.
+      </>
+    ),
+    technique: 'TypeScript, React, Avaya, Matrix, MQTT, MUI, Zustand',
+    role: 'Team Lead Frontend, Lead Developer, Scrum Master',
+    images: ['confidential.png'],
+  },
+  {
     title: 'Confidential',
     employer: 'MediaMonks',
     year: '2021-2023',
