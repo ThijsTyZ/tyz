@@ -34,7 +34,7 @@ const projects: ReadonlyArray<Project> = [
         decisions, defining technical requirements, and maintaining alignment
         with project goals. <br />
         <br />
-        (Co-)developing the application ○ Serve as Scrum Master for the web
+        I (co-)developed the application and served as Scrum Master for the web
         team, facilitating Agile processes and ensuring efficient project
         delivery.
         <br />
