@@ -2,7 +2,7 @@ import type { ValueOf } from 'next/constants';
 
 export const slogan = 'Think. Yield. Zenith.';
 export const name = 'Thijs Broerse';
-export const role = 'Freelance Senior Frontend Developer / Interim Tech Lead';
+export const role = 'Interim Tech Lead / Freelance Senior Frontend Developer';
 export const title = `TYZ - ${name} - ${role}`;
 
 export const description =

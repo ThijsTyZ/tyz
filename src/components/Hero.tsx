@@ -27,13 +27,21 @@ export function Hero(): ReactElement {
             </>
           ))}
         </h3>
-        <p className="lg:text-justify opacity-70 pt-4">
-          Hi, I&apos;m Thijs Broerse, a passionate and highly skilled frontend
-          expert with over 20 years of experience in web development and
-          leadership. I excel at setting up, developing, and maintaining complex
-          frontend systems, as well as leading international development teams.
-          I have contributed to numerous award-winning projects and specialize
-          in TypeScript, React, NextJS, Leadership and architecture.
+        <p className="lg:text-justify opacity-70 pt-4 text-xl">
+          Hi, I&apos;m Thijs Broerse, a frontend and full-stack expert with{' '}
+          <strong>
+            20+ years of experience in web development and leadership
+          </strong>
+          . I specialize in crafting robust web applications and leading
+          international teams to success, with a track record of contributing to
+          many <strong>award-winning</strong> projects.
+        </p>
+        <p className="lg:text-justify opacity-70 pt-10 text-xl">
+          Passionate about web development and armed with expertise in{' '}
+          <strong>TypeScript</strong>, <strong>React</strong>,{' '}
+          <strong>NextJS</strong>, <strong>architecture</strong> and more. I
+          embrace technical challenges and leadership roles but cherish
+          teamwork. Let&apos;s collaborate on your next project!
         </p>
       </div>
     </section>
