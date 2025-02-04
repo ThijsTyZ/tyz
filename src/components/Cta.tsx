@@ -24,11 +24,10 @@ export function Cta({
               rounded-xl
               transition-colors 
               border border-opacity-10
-              bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-transparent 
+              bg-gradient-to-b from-orangeStart to-orangeEnd 
               
-              hover:text-black
               hover:no-underline
-              hover:bg-white
+              hover:from-orangeEnd hover:to-orangeStart
               `}
     >
       {children}

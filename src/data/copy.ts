@@ -2,7 +2,7 @@ import type { ValueOf } from 'next/constants';
 
 export const slogan = 'Think. Yield. Zenith.';
 export const name = 'Thijs Broerse';
-export const role = 'Interim Tech Lead / Freelance Senior Frontend Developer';
+export const role = 'Interim Frontend Engineer';
 export const title = `TYZ - ${name} - ${role}`;
 
 export const description =
@@ -598,7 +598,7 @@ thinking, connectivity, empathy and mentorship.`,
   },
   {
     text: `I've worked with Thijs for 12,5 years and have always been
-impressed by his skill and knowledge. H's an absolute legend
+impressed by his skill and knowledge. He's an absolute legend
 and one of the best I've ever worked with. Would absolutely
 recommend!`,
     author: `Dennis de Rooij`,

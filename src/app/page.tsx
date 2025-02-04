@@ -39,15 +39,65 @@ export default function Home(): ReactElement {
         <a
           href={phonenumber.href}
           title={phonenumber.title}
-          className="text-white text-m text-center"
+          className="text-m text-center hover:text-orangeEnd"
         >
           or call me on {phonenumber.text}
         </a>
       </section>
       {/**/}
 
+      {/* Portfolio */}
+      <section className="p-5 w-full mt-4 bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart to-transparent via-orangeStart/40 via-20% rounded-xl  text-sm">
+        <h3 className="text-2xl mb-5">Work</h3>
+        <p className="text-sm opacity-70">
+          During my employment at Media.Monks, Lost Boys and as a freelancer I
+          have worked for Hyundai Genesis, Prologis, Albert Heijn, Efteling,
+          Kodak, Amazon, Radio 538, GMC, Nickelodeon, KPN Hi, Brunel, Old Spice,
+          Remy Martin, Doritos, Pearl Opticiens, Ikea, ING, Dela, T-Mobile,
+          Heineken, Coca Cola and more. For a selection of my work, checkout{' '}
+          <Link
+            href={paths.portfolio}
+            className="underline hover:text-black "
+            title="View my porfolio"
+          >
+            {' '}
+            my portfolio
+          </Link>{' '}
+          or check my profile on{' '}
+          <Link
+            href="https://github.com/ThijsTyZ"
+            target="_blank"
+            rel="noreferrer"
+            title="View my profile on Github"
+            className="underline hover:text-black"
+          >
+            Github
+          </Link>{' '}
+          or{' '}
+          <Link
+            href="https://codepen.io/_TyZ_"
+            target="_blank"
+            rel="noreferrer"
+            title="View my profile on Codepen"
+            className="underline hover:text-black"
+          >
+            Codepen
+          </Link>{' '}
+          for code examples.
+        </p>
+
+        <div className="flex flex-col lg:place-items-center py-10">
+          <Cta path={paths.portfolio}>Check out my portfolio</Cta>
+        </div>
+      </section>
+      {/**/}
+
+      <section className="p-5 mt-4">
+        <Logo />
+      </section>
+
       {/* Skills */}
-      <section className="p-5 mt-4 relative  bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(255,255,255,0.8)] to-transparent rounded-xl text-black w-full">
+      <section className="p-5 mt-4 relative  bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/40 via-10% rounded-xl text-black w-full">
         <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
 
         <ul className="text-sm grid lg:grid-cols-3 grid-cols-2">
@@ -64,7 +114,7 @@ export default function Home(): ReactElement {
                         title={description ?? name}
                         target={href.startsWith('http') ? '_blank' : '_self'}
                         rel="noreferrer"
-                        className={`opacity-60 hover:opacity-100 ${
+                        className={`opacity-60 hover:opacity-100 hover:text-orangeEnd ${
                           isHighlighted ? 'font-bold' : ''
                         }`}
                       >
@@ -103,62 +153,12 @@ export default function Home(): ReactElement {
       </section>
       {/**/}
 
-      <section className="p-5 mt-4">
-        <Logo />
-      </section>
-
-      {/* Portfolio */}
-      <section className="p-5 w-full mt-4 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-transparent rounded-xl text-white text-sm">
-        <h3 className="text-2xl mb-5">Work</h3>
-        <p className="text-sm opacity-70">
-          During my employment at Media.Monks, Lost Boys and as a freelancer I
-          have worked for Hyundai Genesis, Prologis, Albert Heijn, Efteling,
-          Kodak, Amazon, Radio 538, GMC, Nickelodeon, KPN Hi, Brunel, Old Spice,
-          Remy Martin, Doritos, Pearl Opticiens, Ikea, ING, Dela, T-Mobile,
-          Heineken, Coca Cola and more. For a selection of my work, checkout{' '}
-          <Link
-            href={paths.portfolio}
-            className="underline hover:text-black"
-            title="View my porfolio"
-          >
-            {' '}
-            my portfolio
-          </Link>{' '}
-          or check my profile on{' '}
-          <Link
-            href="https://github.com/ThijsTyZ"
-            target="_blank"
-            rel="noreferrer"
-            title="View my profile on Github"
-            className="underline hover:text-black"
-          >
-            Github
-          </Link>{' '}
-          or{' '}
-          <Link
-            href="https://codepen.io/_TyZ_"
-            target="_blank"
-            rel="noreferrer"
-            title="View my profile on Codepen"
-            className="underline hover:text-black"
-          >
-            Codepen
-          </Link>{' '}
-          for code examples.
-        </p>
-
-        <div className="flex flex-col lg:place-items-center py-10">
-          <Cta path={paths.portfolio}>Check out my portfolio</Cta>
-        </div>
-      </section>
-      {/**/}
-
       {/* Recommendations */}
-      <section className="p-5 mb-10 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-transparent rounded-xl text-black text-sm">
+      <section className="p-5 mb-10 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/40 via-10%  rounded-xl text-black text-sm">
         <h3 className="text-white text-2xl mb-5">What others say about me</h3>
         {recommendations.map(({ text, author, position }, index) => (
           <p
-            className={`p-5 from-white to-transparent rounded-xl text-black ${
+            className={`p-5 from-white to-transparent rounded-xl  ${
               index % 2 ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
             }`}
             key={author}
@@ -174,7 +174,7 @@ export default function Home(): ReactElement {
           target="_blank"
           rel="noreferrer"
           title="Read more recommendations about me on LinkedIn"
-          className="underline p-5"
+          className="underline p-5 hover:text-orangeEnd"
         >
           Read more...
         </a>

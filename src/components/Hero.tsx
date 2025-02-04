@@ -4,44 +4,36 @@ import { name, role } from '@/data/copy';
 
 export function Hero(): ReactElement {
   return (
-    <section className="max-w-5xl flex flex-col text-white lg:pl-10 lg:py-10">
+    <section className="max-w-5xl flex flex-col  lg:pl-10 lg:py-10">
       <div className="max-lg:flex max-lg:flex-col max-lg:items-center">
         <Image
           src="/img/thijs.jpeg"
           alt="Thijs profile picture"
-          width={260}
-          height={260}
-          className="rounded-full lg:float-left lg:mr-10 mt-8 border-4 border-white border-opacity-60"
+          width={280}
+          height={280}
+          className="rounded-full lg:float-left lg:mr-8 border-4 border-orangeStart border-opacity-80"
         />
-        <h2 className="text-6xl py-5">{name}</h2>
-        <h3 className="opacity-90 text-3xl max-w-5xl">
-          {role.split(' /').map((text, index) => (
-            <>
-              {index > 0 && (
-                <>
-                  &nbsp;/
-                  <br />
-                </>
-              )}
-              {text}
-            </>
-          ))}
-        </h3>
-        <p className="lg:text-justify opacity-70 pt-4 text-xl">
-          Hi, I&apos;m Thijs Broerse, a frontend and full-stack expert with{' '}
-          <strong>
-            20+ years of experience in web development and leadership
+        <h2 className="text-6xl pb-4">{name}</h2>
+        <h3 className="opacity-90 text-2xl max-w-5xl">{role}</h3>
+        <h4 className="opacity-90 text-xl max-w-5xl pt-2">
+          Architecting scalable solutions & leading teams to success
+        </h4>
+        <p className="lg:text-justify opacity-70 pt-4 text-l">
+          I help companies build{' '}
+          <strong className="text-orangeEnd">
+            scalable, high-quality web applications
+          </strong>{' '}
+          and optimize their development processes. With 20+ years of experience
+          in{' '}
+          <strong className="text-orangeEnd">
+            frontend engineering, architecture, and leadership
           </strong>
-          . I specialize in crafting robust web applications and leading
-          international teams to success, with a track record of contributing to
-          many <strong>award-winning</strong> projects.
+          , I specialize in{' '}
+          <strong className="text-orangeEnd">React, TypeScript, Next.js</strong>
+          , and guiding teams to success.
         </p>
-        <p className="lg:text-justify opacity-70 pt-10 text-xl">
-          Passionate about web development and armed with expertise in{' '}
-          <strong>TypeScript</strong>, <strong>React</strong>,{' '}
-          <strong>NextJS</strong>, <strong>architecture</strong> and more. I
-          embrace technical challenges and leadership roles but cherish
-          teamwork. Let&apos;s collaborate on your next project!
+        <p className="lg:text-justify opacity-70 pt-4 text-l italic">
+          Hands-on, strategic, and always focused on impact. Let’s connect!
         </p>
       </div>
     </section>

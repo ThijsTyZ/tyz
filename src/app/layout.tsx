@@ -30,7 +30,9 @@ export default function RootLayout({
 }): ReactElement {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-white bg-gradient-to-b from-white via-white to-orangeStart/10 `}
+      >
         <div className="w-full flex flex-col items-center min-h-screen justify-between">
           <Header />
 

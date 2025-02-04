@@ -1,4 +1,7 @@
 import type { Config } from 'tailwindcss';
+import { theme } from './src/theme';
+
+console.log('THIS IS A TEST TAILWIND', theme);
 
 const config: Config = {
   content: [
@@ -8,6 +11,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: { ...theme.colors },
+
       theme: {
         extend: {},
       },
