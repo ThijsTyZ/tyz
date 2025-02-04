@@ -23,11 +23,23 @@ export function Cta({
               p-4 m-2 
               rounded-xl
               transition-colors 
-              border border-opacity-10
               bg-gradient-to-b from-orangeStart to-orangeEnd 
+              relative
+              
+              before:absolute
+              before:rounded-[14px]
+              before:bg-gradient-to-b before:from-orangeEnd before:to-orangeStart
+              before:content-['']
+              before:top-0
+              before:bottom-0
+              before:left-0
+              before:right-0
+              before:z-[-1]
+              before:m-[-2px]
               
               hover:no-underline
               hover:from-orangeEnd hover:to-orangeStart
+              hover:before:bg-gradient-to-t
               `}
     >
       {children}

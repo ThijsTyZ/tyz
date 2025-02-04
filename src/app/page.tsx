@@ -155,7 +155,7 @@ export default function Home(): ReactElement {
 
       {/* Recommendations */}
       <section className="p-5 mb-10 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/40 via-10%  rounded-xl text-black text-sm">
-        <h3 className="text-white text-2xl mb-5">What others say about me</h3>
+        <h3 className="text-2xl mb-5">What others say about me</h3>
         {recommendations.map(({ text, author, position }, index) => (
           <p
             className={`p-5 from-white to-transparent rounded-xl  ${

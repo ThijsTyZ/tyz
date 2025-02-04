@@ -6,16 +6,33 @@ export function Hero(): ReactElement {
   return (
     <section className="max-w-5xl flex flex-col  lg:pl-10 lg:py-10">
       <div className="max-lg:flex max-lg:flex-col max-lg:items-center">
-        <Image
-          src="/img/thijs.jpeg"
-          alt="Thijs profile picture"
-          width={280}
-          height={280}
-          className="rounded-full lg:float-left lg:mr-8 border-4 border-orangeStart border-opacity-80"
-        />
+        <div
+          className="
+            before:absolute
+            before:bg-gradient-to-b before:from-orangeStart before:to-orangeEnd
+            before:content-['']
+            before:rounded-full
+            before:w-[288px]
+            before:h-[288px]
+            before:z-[-1]
+            before:m-[-4px]
+      "
+        >
+          <Image
+            src="/img/thijs.jpeg"
+            alt="Thijs profile picture"
+            width={280}
+            height={280}
+            className="
+            rounded-full
+            lg:float-left
+            lg:mr-8
+          "
+          />
+        </div>
         <h2 className="text-6xl pb-4">{name}</h2>
-        <h3 className="opacity-90 text-2xl max-w-5xl">{role}</h3>
-        <h4 className="opacity-90 text-xl max-w-5xl pt-2">
+        <h3 className="opacity-90 text-2xl max-w-5xl ">{role}</h3>
+        <h4 className="opacity-90 text-xl max-w-5xl pt-2 ">
           Architecting scalable solutions & leading teams to success
         </h4>
         <p className="lg:text-justify opacity-70 pt-4 text-l">
