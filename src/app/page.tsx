@@ -47,7 +47,7 @@ export default function Home(): ReactElement {
       {/**/}
 
       {/* Portfolio */}
-      <section className="p-5 w-full mt-4 bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart to-transparent via-orangeStart/40 via-20% rounded-xl  text-sm">
+      <section className="p-5 w-full mt-4 bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart to-transparent via-orangeStart/40 via-20% rounded-tr-2xl  text-sm">
         <h3 className="text-2xl mb-5">Work</h3>
         <p className="text-sm opacity-70">
           During my employment at Media.Monks, Lost Boys and as a freelancer I
@@ -97,7 +97,7 @@ export default function Home(): ReactElement {
       </section>
 
       {/* Skills */}
-      <section className="p-5 mt-4 relative  bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/40 via-10% rounded-xl text-black w-full">
+      <section className="p-5 mt-4 relative  bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/40 via-10% rounded-tr-2xl text-black w-full">
         <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
 
         <ul className="text-sm grid lg:grid-cols-3 grid-cols-2">
@@ -154,11 +154,11 @@ export default function Home(): ReactElement {
       {/**/}
 
       {/* Recommendations */}
-      <section className="p-5 mb-10 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/40 via-10%  rounded-xl text-black text-sm">
+      <section className="p-5 mb-10 mt-10 bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/40 via-10%  rounded-tr-2xl text-black text-sm">
         <h3 className="text-2xl mb-5">What others say about me</h3>
         {recommendations.map(({ text, author, position }, index) => (
           <p
-            className={`p-5 from-white to-transparent rounded-xl  ${
+            className={`p-5 from-white to-transparent rounded-tr-2xl rounded-bl-lg  ${
               index % 2 ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
             }`}
             key={author}

@@ -9,7 +9,7 @@ export default function ArticleBlock({
 }: Article & { variant: 'white' | 'black' }): ReactElement {
   return (
     <article
-      className={`p-5 lg:pb-16 rounded-xl to-transparent
+      className={`p-5 lg:pb-16 rounded-tr-2xl rounded-bl-lg to-transparent
      ${
        variant === 'white'
          ? `bg-gradient-to-r lg:bg-gradient-to-b from-orangeStart  via-orangeStart/30 via-20% `

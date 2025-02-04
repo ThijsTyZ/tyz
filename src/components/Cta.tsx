@@ -20,14 +20,16 @@ export function Cta({
       {...rest}
       className={`
               text-white text-3xl
-              p-4 m-2 
-              rounded-xl
+              px-4 py-2 m-2 
+              rounded-tr-2xl
+              rounded-bl-lg
               transition-colors 
               bg-gradient-to-b from-orangeStart to-orangeEnd 
               relative
               
               before:absolute
-              before:rounded-[14px]
+              before:rounded-tr-[18px]
+              before:rounded-bl-[10px]
               before:bg-gradient-to-b before:from-orangeEnd before:to-orangeStart
               before:content-['']
               before:top-0
