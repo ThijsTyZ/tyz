@@ -181,7 +181,7 @@ const projects: ReadonlyArray<Project> = [
     employer: 'MediaMonks',
     year: '2020-2023',
     description:
-      'Media.Monks - Frontend Coding Standards open source project. Extensive documentation with a eslint configuration for JavaScript, TypeScript and/or React projects.',
+      'Media.Monks - Frontend Coding Standards open source project. Extensive documentation with a ESlint configuration for JavaScript, TypeScript and/or React projects.',
     href: 'https://github.com/mediamonks/frontend-coding-standards',
     technique: 'React, TypeScript, JavaScript, CSS, Open Source',
     role: 'Global Frontend Director',
@@ -283,8 +283,8 @@ const projects: ReadonlyArray<Project> = [
         5) stand by the mailbox and wait for their thingy. Thousands and
         thousands of runs were submitted and prizes distributed, but most
         importantly we finally gave people a reason to exercise that didn&apos;t
-        not involve dreams of gold medals, profitable shoe endorsements or
-        better health!
+        involve dreams of gold medals, profitable shoe endorsements or better
+        health!
       </>
     ),
     href: 'https://davidsonmike.com/dreamrunner',
@@ -531,7 +531,7 @@ export default function Portfolio(): ReactElement {
             {hasFwa && (
               <Image
                 src="/img/portfolio/fwa-badge.png"
-                alt="This project won a Favorite Website Awart"
+                alt="This project won a Favorite Website Award (FWA)"
                 width={150}
                 height={150}
                 className="absolute top-0 right-0"

@@ -112,10 +112,11 @@ export default function Home(): ReactElement {
         <h3 className="text-2xl mb-5">Work</h3>
         <p className="text-sm opacity-70">
           During my employment at Media.Monks, Lost Boys and as a freelancer I
-          have worked for Hyundai Genesis, Prologis, Albert Heijn, Efteling,
-          Kodak, Amazon, Radio 538, GMC, Nickelodeon, KPN Hi, Brunel, Old Spice,
-          Remy Martin, Doritos, Pearl Opticiens, Ikea, ING, Dela, T-Mobile,
-          Heineken, Coca Cola and more. For a selection of my work, checkout{' '}
+          have worked for Toelevering Online, Hyundai Genesis, Prologis, Albert
+          Heijn, Efteling, Kodak, Amazon, Radio 538, GMC, Nickelodeon, KPN Hi,
+          Brunel, Old Spice, Remy Martin, Doritos, Pearl Opticiens, Ikea, ING,
+          Dela, T-Mobile, Heineken, Coca Cola and more. For a selection of my
+          work, checkout{' '}
           <Link
             href={paths.portfolio}
             className="underline hover:text-black"
