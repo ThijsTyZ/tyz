@@ -18,6 +18,128 @@ type Project = {
 
 const projects: ReadonlyArray<Project> = [
   {
+    title: 'Window & Door Configurator',
+    employer: 'Freelance - Toelevering Online',
+    year: '2025',
+    description: (
+      <>
+        <p>
+          <strong>Context &amp; challenge</strong>
+          <br />
+          Two prior multi-developer attempts failed to deliver a maintainable,
+          production-ready configurator. The business needed a robust,
+          user-friendly solution that could express complex dependency logic,
+          prevent invalid combinations, and be easy to extend.
+        </p>
+        <br />
+        <p>
+          <strong>Solution</strong>
+          <br />I built a React/TypeScript application with{' '}
+          <strong>URL as Single Source of Truth</strong> (deep-linkable,
+          shareable configurations), a <strong>type-safe GraphQL layer</strong>{' '}
+          (codegen, strict typings), and a modular component architecture
+          documented in <strong>Storybook</strong>. Strict validations and smart
+          UI flows guide users step-by-step, blocking impossible combinations
+          and explaining choices with instant feedback.
+        </p>
+        <br />
+        <p>
+          <strong>Key capabilities</strong>
+        </p>
+        <ul>
+          <li>
+            Detailed configuration: dimensions, pane layouts, opening
+            directions, profiles, finishes, glass options, accessories.
+          </li>
+          <li>
+            Instant feedback &amp; validation: only valid combinations; clear
+            error/empty/loading states.
+          </li>
+          <li>
+            Shareable URLs: open, edit, and re-use configurations via a single
+            link.
+          </li>
+          <li>
+            Accessibility &amp; UX: keyboard navigation, ARIA attributes,
+            consistent focus management.
+          </li>
+          <li>
+            Performance: targeted memoization and code-splitting where
+            beneficial.
+          </li>
+        </ul>
+        <br />
+        <p>
+          <strong>Architecture &amp; quality</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>Frontend:</strong> React + TypeScript (strict), Zustand for
+            state, React Router, Storybook for docs.
+          </li>
+          <li>
+            <strong>Data:</strong> GraphQL with schema-driven types and safe
+            data mapping, robust error handling.
+          </li>
+          <li>
+            <strong>Quality &amp; DX:</strong> Jest + React Testing Library,
+            Playwright groundwork, ESLint/Prettier, pre-commit hooks.
+          </li>
+          <li>
+            <strong>CI/CD:</strong> GitHub Actions gates for lint/test/build;
+            predictable, repeatable releases.
+          </li>
+        </ul>
+        <br />
+        <p>
+          <strong>Impact</strong>
+        </p>
+        <ul>
+          <li>
+            Successful turnaround: delivered to <strong>live production</strong>{' '}
+            as a solo developer—faster, with fewer resources, and at higher
+            quality than previous efforts.
+          </li>
+          <li>
+            Scalable foundation: architectural patterns now applied across the
+            broader e-commerce platform.
+          </li>
+        </ul>
+        <br />
+        <p>
+          <strong>Links</strong>
+          <br />
+          <a
+            href="https://www.toeleveringonline.nl/configurator/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live
+          </a>{' '}
+          &middot;
+          <a
+            href="https://www.linkedin.com/pulse/window-door-configurator-thijs-broerse-hyrpe/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Write-up
+          </a>
+        </p>
+      </>
+    ),
+    href: 'https://www.toeleveringonline.nl/configurator/',
+    technique: 'TypeScript, React, NextJS, Vite, Zustand, TailwindCSS',
+    role: 'Freelance Senior Frontend Engineer',
+    images: [
+      'toelevering_online_configurator_1.png',
+      'toelevering_online_configurator_2.png',
+      'toelevering_online_configurator_3.png',
+      'toelevering_online_configurator_4.png',
+      'toelevering_online_configurator_5.png',
+      'toelevering_online_configurator_6.png',
+    ],
+  },
+  {
     title: 'Unified Communication platform',
     employer: 'Freelance - Pridis',
     year: '2024',
@@ -44,7 +166,6 @@ const projects: ReadonlyArray<Project> = [
     ),
     technique: 'TypeScript, React, Avaya, Matrix, MQTT, MUI, Zustand',
     role: 'Team Lead Frontend, Lead Developer, Scrum Master',
-    images: ['confidential.png'],
   },
   {
     title: 'Confidential',
@@ -54,7 +175,6 @@ const projects: ReadonlyArray<Project> = [
       "Worked as a Technical Director for one of MediaMonks biggest clients. Unfortunately due to confidentiality, I can't showcase this.",
     technique: 'React, TypeScript, Muban, WebGL',
     role: 'Technical Director',
-    images: ['confidential.png'],
   },
   {
     title: 'Coding Standards & Eslint Configuration',
@@ -427,7 +547,7 @@ export default function Portfolio(): ReactElement {
             )}
 
             <div
-              className={`w-full  pr-8 lg:pr-32 ${
+              className={`w-full pr-8 lg:pr-8 ${
                 index % 2 ? `drop-shadow-[0_0px_5px_rgba(0,0,0,1)]` : ''
               }`}
             >

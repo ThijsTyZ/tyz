@@ -10,7 +10,7 @@ export type ImageCarouselProps = {
   autoScrollOffset: number;
 };
 
-const imageSize = 600;
+const imageSize = 400;
 
 export default function ImageCarousel({
   title,
@@ -58,7 +58,7 @@ export default function ImageCarousel({
   }, 4000);
 
   return (
-    <div className="lg:w-[600px] flex flex-col ">
+    <div className="lg:w-[400px] flex flex-col ">
       <div
         className="mb-5 lg:mb-0 h-[300px] g:w-[600px] flex flex-row overflow-auto scroll-smooth rounded-lg"
         ref={container}

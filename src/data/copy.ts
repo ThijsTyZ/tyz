@@ -499,6 +499,12 @@ export const skills: ReadonlyArray<{
           'Storybook is a frontend workshop for building UI components and pages in isolation.',
       },
       {
+        name: 'Playwright',
+        href: 'https://playwright.dev/',
+        description:
+          'Playwright is a Node.js library to automate Chromium, Firefox and WebKit with a single API.',
+      },
+      {
         name: 'Jasmine',
         href: 'https://jasmine.github.io/',
         description:
