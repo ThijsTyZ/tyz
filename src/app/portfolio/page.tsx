@@ -46,7 +46,7 @@ const projects: ReadonlyArray<Project> = [
         <p>
           <strong>Key capabilities</strong>
         </p>
-        <ul>
+        <ul className="list-disc pl-6">
           <li>
             Detailed configuration: dimensions, pane layouts, opening
             directions, profiles, finishes, glass options, accessories.
@@ -72,7 +72,7 @@ const projects: ReadonlyArray<Project> = [
         <p>
           <strong>Architecture &amp; quality</strong>
         </p>
-        <ul>
+        <ul className="list-disc pl-6">
           <li>
             <strong>Frontend:</strong> React + TypeScript (strict), Zustand for
             state, React Router, Storybook for docs.
@@ -94,7 +94,7 @@ const projects: ReadonlyArray<Project> = [
         <p>
           <strong>Impact</strong>
         </p>
-        <ul>
+        <ul className="list-disc pl-6">
           <li>
             Successful turnaround: delivered to <strong>live production</strong>{' '}
             as a solo developer—faster, with fewer resources, and at higher
